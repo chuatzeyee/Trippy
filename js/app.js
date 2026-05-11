@@ -278,7 +278,6 @@ function renderOverview(trip) {
     html += '</div></div>';
   }
 
-  const homeSym = trip.currency?.homeSymbol || 'S$';
   const fixedHtml = trip.fixedCosts ? `
     <div class="overview-grid">
       <div class="overview-card"><h3>✈️ Flights</h3><div class="value">${homeSym}${trip.fixedCosts.flights.totalSGD.toLocaleString()}</div><div class="detail">${homeSym}${trip.fixedCosts.flights.perPerson.toLocaleString()} pp</div><div class="detail">${trip.fixedCosts.flights.note}</div></div>
