@@ -25,9 +25,9 @@ const DAYS = [
       map: "https://maps.google.com/?q=Melbourne+Airport+Terminal+2",
       cost: { aud: 0 },
       transport: [
-        { mode: "Uber/DiDi", cost: "A$45–55", time: "30–40 min", note: "Best value for 2 pax. Request from T2 rideshare zone." },
+        { mode: "Uber/DiDi", cost: "A$45-55", time: "30-40 min", note: "Best value for 2 pax. Request from T2 rideshare zone." },
         { mode: "SkyBus", cost: "A$49.80 (2 pax)", time: "30 min", note: "To Southern Cross Station, then walk or tram to hotel." },
-        { mode: "Taxi", cost: "A$60–75", time: "30–40 min", note: "Metered. Airport surcharge A$4.78." }
+        { mode: "Taxi", cost: "A$60-75", time: "30-40 min", note: "Metered. Airport surcharge A$4.78." }
       ]
     },
     {
@@ -37,7 +37,7 @@ const DAYS = [
       atmosphere: [],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Melbourne_CBD-CollinsSt_East.jpg/960px-Melbourne_CBD-CollinsSt_East.jpg",
       map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
-      cost: { aud: 200, note: "~A$200–350/night for 1BR apartment" },
+      cost: { aud: 200, note: "~A$200-350/night for 1BR apartment" },
       booking: "https://www.cllix.com/collins-house-apartments/",
       transport: []
     },
@@ -48,7 +48,7 @@ const DAYS = [
       atmosphere: ["artsy", "touristy", "foodie"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Degraves_Street_in_Melbourne_Australia.jpg/960px-Degraves_Street_in_Melbourne_Australia.jpg",
       map: "https://maps.google.com/?q=Degraves+Street+Melbourne",
-      cost: { aud: 25, note: "A$20–30 pp for coffee + meal" },
+      cost: { aud: 25, note: "A$20-30 pp for coffee + meal" },
       transport: [
         { mode: "Walk", cost: "Free", time: "8 min from Collins House", note: "" }
       ]
@@ -105,11 +105,11 @@ const DAYS = [
     {
       time: "18:30", title: "Dinner at Chin Chin",
       type: "food",
-      desc: "Southeast Asian-inspired restaurant on Flinders Lane. Bold, punchy flavours -pad see ew, green papaya salad, whole roasted cauliflower, betel leaf wraps. No reservations taken, walk-in only. Expect a 20–40 min wait (grab a drink at GoGo Bar upstairs while waiting). Always buzzing, loud, energetic. A Melbourne institution.",
+      desc: "Southeast Asian-inspired restaurant on Flinders Lane. Bold, punchy flavours -pad see ew, green papaya salad, whole roasted cauliflower, betel leaf wraps. No reservations taken, walk-in only. Expect a 20-40 min wait (grab a drink at GoGo Bar upstairs while waiting). Always buzzing, loud, energetic. A Melbourne institution.",
       atmosphere: ["busy", "foodie", "multicultural"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/FlindersLane-shopfront.jpg/960px-FlindersLane-shopfront.jpg",
       map: "https://maps.google.com/?q=Chin+Chin+Melbourne+Flinders+Lane",
-      cost: { aud: 50, note: "A$40–60 pp with drinks" },
+      cost: { aud: 50, note: "A$40-60 pp with drinks" },
       booking: "https://www.chinchinrestaurant.com.au/",
       transport: [
         { mode: "Walk", cost: "Free", time: "10 min from Southbank", note: "" }
@@ -139,7 +139,7 @@ const DAYS = [
       atmosphere: ["relaxed"],
       img: "",
       map: "https://maps.google.com/?q=Patricia+Coffee+Brewers+Melbourne",
-      cost: { aud: 15, note: "A$10–20 pp" },
+      cost: { aud: 15, note: "A$10-20 pp" },
       transport: []
     },
     {
@@ -149,7 +149,7 @@ const DAYS = [
       atmosphere: ["busy", "multicultural", "foodie", "local"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Melbourne_%28AU%29%2C_Queen_Victoria_Market_--_2019_--_1542.jpg/960px-Melbourne_%28AU%29%2C_Queen_Victoria_Market_--_2019_--_1542.jpg",
       map: "https://maps.google.com/?q=Queen+Victoria+Market+Melbourne",
-      cost: { aud: 20, note: "A$15–30 for tastings & snacks" },
+      cost: { aud: 20, note: "A$15-30 for tastings & snacks" },
       booking: "https://qvm.com.au/",
       transport: [
         { mode: "Tram (FREE)", cost: "Free", time: "8 min", note: "Any tram on Elizabeth St, Free Tram Zone" },
@@ -187,7 +187,7 @@ const DAYS = [
       atmosphere: ["busy", "foodie", "local"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Xiao_Long_Bao_dumplings.jpg/960px-Xiao_Long_Bao_dumplings.jpg",
       map: "https://maps.google.com/?q=HuTong+Dumpling+Bar+Melbourne",
-      cost: { aud: 30, note: "A$25–40 pp" },
+      cost: { aud: 30, note: "A$25-40 pp" },
       transport: [
         { mode: "Walk", cost: "Free", time: "2 min", note: "On Market Lane, Chinatown" }
       ]
@@ -195,7 +195,7 @@ const DAYS = [
     {
       time: "14:00", title: "NGV International (National Gallery of Victoria)",
       type: "culture",
-      desc: "Australia’s oldest and most visited art gallery. The permanent collection is FREE and world-class: European Old Masters, Asian art, photography, Australian art. The water wall entrance is iconic. Allow 2–3 hours. Check for paid special exhibitions. The CARTIER: Melbourne Winter Masterpieces show opens June 12 -just after your trip.",
+      desc: "Australia’s oldest and most visited art gallery. The permanent collection is FREE and world-class: European Old Masters, Asian art, photography, Australian art. The water wall entrance is iconic. Allow 2-3 hours. Check for paid special exhibitions. The CARTIER: Melbourne Winter Masterpieces show opens June 12 -just after your trip.",
       atmosphere: ["quiet", "artsy", "upscale"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Melbourne_National_Gallery_of_Victoria_Main_facade_seen_in_front.jpg/960px-Melbourne_National_Gallery_of_Victoria_Main_facade_seen_in_front.jpg",
       map: "https://maps.google.com/?q=NGV+International+180+St+Kilda+Road+Melbourne",
@@ -203,7 +203,7 @@ const DAYS = [
       booking: "https://www.ngv.vic.gov.au/",
       transport: [
         { mode: "Tram (FREE)", cost: "Free", time: "12 min", note: "Any tram on St Kilda Rd from Flinders St" },
-        { mode: "Uber", cost: "A$10–15", time: "5 min", note: "" }
+        { mode: "Uber", cost: "A$10-15", time: "5 min", note: "" }
       ]
     },
     {
@@ -235,11 +235,11 @@ const DAYS = [
     {
       time: "19:00", title: "Dinner at Tipo 00",
       type: "food",
-      desc: "Award-winning handmade pasta restaurant on Little Bourke Street. Every strand of spaghetti, every sheet of lasagna is made fresh daily. The malfaldine with duck ragù is legendary. Intimate space, open kitchen, impressive wine list focused on Italian varietals. Book ahead -very popular. A$60–80 pp for pasta + wine.",
+      desc: "Award-winning handmade pasta restaurant on Little Bourke Street. Every strand of spaghetti, every sheet of lasagna is made fresh daily. The malfaldine with duck ragù is legendary. Intimate space, open kitchen, impressive wine list focused on Italian varietals. Book ahead -very popular. A$60-80 pp for pasta + wine.",
       atmosphere: ["foodie", "romantic", "upscale"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flickr_-_cyclonebill_-_Tagliatelle_med_k%C3%B8dboller_og_tomatsauce.jpg/960px-Flickr_-_cyclonebill_-_Tagliatelle_med_k%C3%B8dboller_og_tomatsauce.jpg",
       map: "https://maps.google.com/?q=Tipo+00+361+Little+Bourke+Street+Melbourne",
-      cost: { aud: 70, note: "A$60–80 pp with wine" },
+      cost: { aud: 70, note: "A$60-80 pp with wine" },
       booking: "https://tipo00.com.au/",
       transport: [
         { mode: "Tram (FREE)", cost: "Free", time: "15 min from Shrine", note: "" }
@@ -250,7 +250,7 @@ const DAYS = [
 },
 {
   num: 3, date: "Wed, 27 May", title: "Great Ocean Road", theme: "12 Apostles, Wild Koalas, Rainforest & Shipwreck Coast",
-  weather: { high: 14, low: 9, icon: "🌧️", desc: "Showers & Wind, 13–15°C" },
+  weather: { high: 14, low: 9, icon: "🌧️", desc: "Showers & Wind, 13-15°C" },
   activities: [
     {
       time: "06:30", title: "Hit The Road Boutique Tour -Pickup",
@@ -459,7 +459,7 @@ const DAYS = [
     {
       time: "08:00", title: "Breakfast at Hotel & Prepare for a Long Day",
       type: "food",
-      desc: "Have a good breakfast -it’s a full 12–14 hour day. Pack warm layers for the evening Penguin Parade (you’ll be sitting outdoors at sunset in 8°C). Beanie, scarf, and gloves recommended.",
+      desc: "Have a good breakfast -it’s a full 12-14 hour day. Pack warm layers for the evening Penguin Parade (you’ll be sitting outdoors at sunset in 8°C). Beanie, scarf, and gloves recommended.",
       atmosphere: [],
       img: "",
       map: "",
@@ -476,14 +476,14 @@ const DAYS = [
       cost: { aud: 125, note: "From A$125 pp (guided tour) or A$2,140 (private)" },
       booking: "https://www.penguins.org.au/",
       transport: [
-        { mode: "Guided Tour", cost: "A$125–180 pp", time: "2h drive", note: "Includes hotel pickup & Penguin Parade ticket" },
+        { mode: "Guided Tour", cost: "A$125-180 pp", time: "2h drive", note: "Includes hotel pickup & Penguin Parade ticket" },
         { mode: "Private (Localing)", cost: "A$2,140 for 2", time: "2h drive", note: "Includes dinner, private guide, all entries" }
       ]
     },
     {
       time: "11:00", title: "Churchill Island Heritage Farm",
       type: "culture",
-      desc: "A working heritage farm connected to Phillip Island by a short bridge. Shearing demonstrations, cow milking, and heritage gardens. Peaceful and pastoral. Beautiful grounds with views across Western Port Bay. Allow 1–1.5 hours.",
+      desc: "A working heritage farm connected to Phillip Island by a short bridge. Shearing demonstrations, cow milking, and heritage gardens. Peaceful and pastoral. Beautiful grounds with views across Western Port Bay. Allow 1-1.5 hours.",
       atmosphere: ["quiet", "historic", "family", "scenic"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Churchill_Farm.jpg/960px-Churchill_Farm.jpg",
       map: "https://maps.google.com/?q=Churchill+Island+Heritage+Farm+Victoria",
@@ -498,7 +498,7 @@ const DAYS = [
       atmosphere: ["local", "relaxed", "coastal"],
       img: "",
       map: "https://maps.google.com/?q=Cowes+Phillip+Island+Victoria",
-      cost: { aud: 25, note: "A$20–30 pp" },
+      cost: { aud: 25, note: "A$20-30 pp" },
       transport: []
     },
     {
@@ -550,7 +550,7 @@ const DAYS = [
       atmosphere: ["relaxed"],
       img: "",
       map: "",
-      cost: { aud: 20, note: "A$15–25 pp" },
+      cost: { aud: 20, note: "A$15-25 pp" },
       transport: []
     }
   ],
@@ -573,7 +573,7 @@ const DAYS = [
     {
       time: "08:45", title: "Train to Belgrave",
       type: "transport",
-      desc: "Take the Belgrave line from Flinders Street Station directly to Belgrave -the terminus. ~75 min ride through Melbourne’s eastern suburbs into the Dandenong Ranges. FREE on public transport this week (May 25–31).",
+      desc: "Take the Belgrave line from Flinders Street Station directly to Belgrave -the terminus. ~75 min ride through Melbourne’s eastern suburbs into the Dandenong Ranges. FREE on public transport this week (May 25-31).",
       atmosphere: [],
       img: "",
       map: "https://maps.google.com/?q=Belgrave+Railway+Station+Victoria",
@@ -589,7 +589,7 @@ const DAYS = [
       atmosphere: ["scenic", "historic", "family"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Puffing_Billy_Railway_14A_on_the_Monbulk_Creek_Trestle_Bridge_-_May_2014_-_01.jpg/960px-Puffing_Billy_Railway_14A_on_the_Monbulk_Creek_Trestle_Bridge_-_May_2014_-_01.jpg",
       map: "https://maps.google.com/?q=Puffing+Billy+Railway+Belgrave",
-      cost: { aud: 64, note: "A$64 pp return (Belgrave–Lakeside)" },
+      cost: { aud: 64, note: "A$64 pp return (Belgrave-Lakeside)" },
       booking: "https://puffingbillyrailway.org.au/buy-tickets/",
       transport: []
     },
@@ -600,7 +600,7 @@ const DAYS = [
       atmosphere: ["quiet", "scenic", "relaxed"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Lake_emerald.jpg/960px-Lake_emerald.jpg",
       map: "https://maps.google.com/?q=Emerald+Lake+Park+Victoria",
-      cost: { aud: 20, note: "A$15–25 pp for lunch" },
+      cost: { aud: 20, note: "A$15-25 pp for lunch" },
       transport: []
     },
     {
@@ -633,7 +633,7 @@ const DAYS = [
       cost: { aud: 0, note: "Free to browse" },
       transport: [
         { mode: "Tram (FREE)", cost: "Free", time: "20 min from Flinders St", note: "Tram 78 or 79" },
-        { mode: "Uber", cost: "A$12–18", time: "10 min", note: "" }
+        { mode: "Uber", cost: "A$12-18", time: "10 min", note: "" }
       ]
     },
     {
@@ -643,10 +643,10 @@ const DAYS = [
       atmosphere: ["foodie", "multicultural", "busy", "local"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Lygon_Street%2C_Carlton.jpg/960px-Lygon_Street%2C_Carlton.jpg",
       map: "https://maps.google.com/?q=Lygon+Street+Carlton+Melbourne",
-      cost: { aud: 50, note: "A$40–60 pp with wine" },
+      cost: { aud: 50, note: "A$40-60 pp with wine" },
       transport: [
         { mode: "Tram (FREE)", cost: "Free", time: "15 min", note: "Tram 1 or 6 up Swanston St" },
-        { mode: "Uber", cost: "A$10–15", time: "8 min", note: "" }
+        { mode: "Uber", cost: "A$10-15", time: "8 min", note: "" }
       ]
     }
   ],
@@ -669,14 +669,14 @@ const DAYS = [
     {
       time: "09:30", title: "Brighton Beach Bathing Boxes",
       type: "culture",
-      desc: "93 heritage-listed wooden bathing boxes painted in vibrant colours, standing in a row along Dendy Street Beach. Privately owned (some sell for A$300k+), they’re a beloved Melbourne icon. Perfect for photos against the Port Phillip Bay backdrop. In late May, the beach is quiet and the light is gorgeous. Free to visit, 30–60 min.",
+      desc: "93 heritage-listed wooden bathing boxes painted in vibrant colours, standing in a row along Dendy Street Beach. Privately owned (some sell for A$300k+), they’re a beloved Melbourne icon. Perfect for photos against the Port Phillip Bay backdrop. In late May, the beach is quiet and the light is gorgeous. Free to visit, 30-60 min.",
       atmosphere: ["scenic", "quiet", "touristy"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/PXL_20241005_062211747.MP_Brighton_Bathing_Boxes_Esplanade%2C_Brighton_VIC_3186%2C_Australia_01.jpg/960px-PXL_20241005_062211747.MP_Brighton_Bathing_Boxes_Esplanade%2C_Brighton_VIC_3186%2C_Australia_01.jpg",
       map: "https://maps.google.com/?q=Brighton+Bathing+Boxes+Dendy+Street+Beach",
       cost: { aud: 0, note: "Free" },
       transport: [
         { mode: "Train (FREE)", cost: "Free", time: "23 min", note: "Sandringham line from Flinders St to Brighton Beach station, 15-min walk to boxes" },
-        { mode: "Uber", cost: "A$20–35", time: "20 min", note: "" }
+        { mode: "Uber", cost: "A$20-35", time: "20 min", note: "" }
       ]
     },
     {
@@ -689,13 +689,13 @@ const DAYS = [
       cost: { aud: 0, note: "Free" },
       transport: [
         { mode: "Tram (FREE)", cost: "Free", time: "15 min from Brighton", note: "Bus 600/922/923 between Brighton and St Kilda, or tram 16" },
-        { mode: "Uber", cost: "A$10–15", time: "8 min from Brighton", note: "" }
+        { mode: "Uber", cost: "A$10-15", time: "8 min from Brighton", note: "" }
       ]
     },
     {
       time: "11:30", title: "Luna Park Melbourne",
       type: "culture",
-      desc: "Heritage amusement park (opened 1912) with the famous grinning face entrance. Opens Sat-Sun 11 AM–6 PM. Unlimited Rides tickets A$55 pp, or just enjoy the free-entry promenade and take photos. The Scenic Railway is the world’s oldest continually operating roller coaster (1912). Fun, retro atmosphere.",
+      desc: "Heritage amusement park (opened 1912) with the famous grinning face entrance. Opens Sat-Sun 11 AM-6 PM. Unlimited Rides tickets A$55 pp, or just enjoy the free-entry promenade and take photos. The Scenic Railway is the world’s oldest continually operating roller coaster (1912). Fun, retro atmosphere.",
       atmosphere: ["family", "touristy", "local"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Melbourne%27s_Luna_Park_entrance_at_night.jpg/960px-Melbourne%27s_Luna_Park_entrance_at_night.jpg",
       map: "https://maps.google.com/?q=Luna+Park+Melbourne",
@@ -712,7 +712,7 @@ const DAYS = [
       atmosphere: ["bohemian", "foodie", "local", "multicultural"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Acland_Street_in_St_Kilda.jpg/960px-Acland_Street_in_St_Kilda.jpg",
       map: "https://maps.google.com/?q=Acland+Street+St+Kilda+Melbourne",
-      cost: { aud: 30, note: "A$25–35 pp" },
+      cost: { aud: 30, note: "A$25-35 pp" },
       transport: []
     },
     {
@@ -725,7 +725,7 @@ const DAYS = [
       cost: { aud: 0, note: "Free to explore" },
       transport: [
         { mode: "Tram (FREE)", cost: "Free", time: "30 min from St Kilda", note: "Tram 16 to Flinders St, then tram 11 to Brunswick St" },
-        { mode: "Uber", cost: "A$15–25", time: "15 min", note: "" }
+        { mode: "Uber", cost: "A$15-25", time: "15 min", note: "" }
       ]
     },
     {
@@ -747,7 +747,7 @@ const DAYS = [
       atmosphere: ["artsy", "local", "foodie"],
       img: "",
       map: "https://maps.google.com/?q=Industry+Beans+Fitzroy+Melbourne",
-      cost: { aud: 8, note: "A$6–10 pp" },
+      cost: { aud: 8, note: "A$6-10 pp" },
       transport: [
         { mode: "Walk", cost: "Free", time: "5 min from Smith St", note: "" }
       ]
@@ -759,7 +759,7 @@ const DAYS = [
       atmosphere: ["upscale", "foodie", "romantic"],
       img: "",
       map: "https://maps.google.com/?q=Cutler+and+Co+Fitzroy+Melbourne",
-      cost: { aud: 100, note: "A$90–120 pp (Sunday supper)" },
+      cost: { aud: 100, note: "A$90-120 pp (Sunday supper)" },
       booking: "https://www.cutlerandco.com.au/",
       transport: [
         { mode: "Walk", cost: "Free", time: "5 min from Industry Beans", note: "" }
@@ -797,11 +797,11 @@ const DAYS = [
     {
       time: "09:30", title: "Bus 788 to Rye + Uber to Hot Springs",
       type: "transport",
-      desc: "Bus 788 from Frankston Station along the coast to Rye (~50 min, Myki fare). Then Uber/taxi from Rye to Peninsula Hot Springs (~15 min, A$30–40). Or pre-book the Hot Springs shuttle (Tue/Sat only -not available Monday).",
+      desc: "Bus 788 from Frankston Station along the coast to Rye (~50 min, Myki fare). Then Uber/taxi from Rye to Peninsula Hot Springs (~15 min, A$30-40). Or pre-book the Hot Springs shuttle (Tue/Sat only -not available Monday).",
       atmosphere: [],
       img: "",
       map: "https://maps.google.com/?q=Peninsula+Hot+Springs+Fingal+Victoria",
-      cost: { aud: 35, note: "A$30–40 Uber from Rye" },
+      cost: { aud: 35, note: "A$30-40 Uber from Rye" },
       transport: [
         { mode: "Bus 788 + Uber", cost: "A$3 + A$35", time: "50 min + 15 min", note: "Bus is half-price Myki fare" }
       ]
@@ -809,7 +809,7 @@ const DAYS = [
     {
       time: "10:30", title: "Peninsula Hot Springs -Weekday Getaway for Two",
       type: "nature",
-      desc: "20+ open-air geothermal pools ranging from 36–43°C, set in lush bushland. The Weekday Getaway for Two (A$235) includes Bath House bathing + pizzas & juice for both. Soak in the hilltop pool for panoramic views across the green hills. In winter, the steam rising from the hot water into the cool air is magical. Adults-only (16+). Towel, robe, locker hire included. Allow 3–4 hours to fully relax.",
+      desc: "20+ open-air geothermal pools ranging from 36-43°C, set in lush bushland. The Weekday Getaway for Two (A$235) includes Bath House bathing + pizzas & juice for both. Soak in the hilltop pool for panoramic views across the green hills. In winter, the steam rising from the hot water into the cool air is magical. Adults-only (16+). Towel, robe, locker hire included. Allow 3-4 hours to fully relax.",
       atmosphere: ["relaxed", "romantic", "scenic", "quiet"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Yarrangobilly_Caves_thermal_pools.jpg/960px-Yarrangobilly_Caves_thermal_pools.jpg",
       map: "https://maps.google.com/?q=Peninsula+Hot+Springs+140+Springs+Lane+Fingal+Victoria",
@@ -824,21 +824,21 @@ const DAYS = [
       atmosphere: ["scenic", "quiet", "historic", "upscale"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Ocean_Beach_Road%2C_Sorrento%2C_Victoria%2C_2018%2C_14.jpg/960px-Ocean_Beach_Road%2C_Sorrento%2C_Victoria%2C_2018%2C_14.jpg",
       map: "https://maps.google.com/?q=Sorrento+Victoria+Australia",
-      cost: { aud: 0, note: "Free to explore (wine tasting ~A$10–20)" },
+      cost: { aud: 0, note: "Free to explore (wine tasting ~A$10-20)" },
       transport: [
-        { mode: "Uber", cost: "A$25–35", time: "20 min from Hot Springs", note: "Pre-book return Uber -driver availability can be limited on the Peninsula" }
+        { mode: "Uber", cost: "A$25-35", time: "20 min from Hot Springs", note: "Pre-book return Uber -driver availability can be limited on the Peninsula" }
       ]
     },
     {
       time: "16:00", title: "Return to Melbourne",
       type: "transport",
-      desc: "Uber to Frankston Station (~A$50–60 from Sorrento) or Bus 788 to Frankston. Train back to CBD. Arrive ~17:30.",
+      desc: "Uber to Frankston Station (~A$50-60 from Sorrento) or Bus 788 to Frankston. Train back to CBD. Arrive ~17:30.",
       atmosphere: [],
       img: "",
       map: "",
-      cost: { aud: 55, note: "A$50–60 Uber to Frankston + A$2.85 train" },
+      cost: { aud: 55, note: "A$50-60 Uber to Frankston + A$2.85 train" },
       transport: [
-        { mode: "Uber + Train", cost: "A$55–65 total", time: "1.5 hours", note: "" },
+        { mode: "Uber + Train", cost: "A$55-65 total", time: "1.5 hours", note: "" },
         { mode: "Bus 788 + Train", cost: "A$5.70", time: "2 hours", note: "More time, much cheaper" }
       ]
     },
@@ -855,11 +855,11 @@ const DAYS = [
     {
       time: "19:30", title: "Fine Dining at Gimlet",
       type: "food",
-      desc: "Andrew McConnell’s glamorous 1920s-inspired brasserie at 33 Russell Street. Lobster thermidor, caviar, oysters, and cocktails in an opulent Art Deco space with crystal chandeliers and velvet banquettes. Dress up. A$100–150 pp with drinks. Book ahead.",
+      desc: "Andrew McConnell’s glamorous 1920s-inspired brasserie at 33 Russell Street. Lobster thermidor, caviar, oysters, and cocktails in an opulent Art Deco space with crystal chandeliers and velvet banquettes. Dress up. A$100-150 pp with drinks. Book ahead.",
       atmosphere: ["upscale", "romantic", "foodie"],
       img: "",
       map: "https://maps.google.com/?q=Gimlet+33+Russell+Street+Melbourne",
-      cost: { aud: 120, note: "A$100–150 pp with cocktails" },
+      cost: { aud: 120, note: "A$100-150 pp with cocktails" },
       booking: "https://gimletmelbourne.com.au/",
       transport: [
         { mode: "Walk", cost: "Free", time: "8 min from Collins House", note: "" }
@@ -893,7 +893,7 @@ const DAYS = [
       booking: "https://www.zoo.org.au/melbourne/",
       transport: [
         { mode: "Tram 58 (half-price)", cost: "A$2.85 pp", time: "15 min", note: "Stop 26, directly outside zoo" },
-        { mode: "Uber", cost: "A$12–20", time: "8 min", note: "" }
+        { mode: "Uber", cost: "A$12-20", time: "8 min", note: "" }
       ]
     },
     {
@@ -903,7 +903,7 @@ const DAYS = [
       atmosphere: ["foodie", "multicultural", "local"],
       img: "",
       map: "https://maps.google.com/?q=Lygon+Street+Carlton+Melbourne",
-      cost: { aud: 25, note: "A$20–30 pp" },
+      cost: { aud: 25, note: "A$20-30 pp" },
       transport: [
         { mode: "Walk", cost: "Free", time: "15 min from zoo", note: "Through Royal Park" }
       ]
@@ -947,11 +947,11 @@ const DAYS = [
     {
       time: "19:00", title: "Farewell Dinner at Flower Drum",
       type: "food",
-      desc: "Melbourne’s legendary Cantonese restaurant, operating since 1975 on Market Lane in Chinatown. Peking duck (carved tableside), mud crab with XO sauce, pipis with black bean sauce. Impeccable white-tablecloth service. A$100–150 pp. Book well ahead -this is Melbourne’s most iconic restaurant. A fitting farewell to the city.",
+      desc: "Melbourne’s legendary Cantonese restaurant, operating since 1975 on Market Lane in Chinatown. Peking duck (carved tableside), mud crab with XO sauce, pipis with black bean sauce. Impeccable white-tablecloth service. A$100-150 pp. Book well ahead -this is Melbourne’s most iconic restaurant. A fitting farewell to the city.",
       atmosphere: ["upscale", "foodie", "historic"],
       img: "",
       map: "https://maps.google.com/?q=Flower+Drum+17+Market+Lane+Melbourne",
-      cost: { aud: 130, note: "A$100–150 pp" },
+      cost: { aud: 130, note: "A$100-150 pp" },
       booking: "https://www.flowerdrum.melbourne/",
       transport: [
         { mode: "Walk", cost: "Free", time: "5 min from Collins House", note: "" }
@@ -981,7 +981,7 @@ const DAYS = [
       atmosphere: ["relaxed"],
       img: "",
       map: "https://maps.google.com/?q=Degraves+Street+Melbourne",
-      cost: { aud: 15, note: "A$12–18 pp" },
+      cost: { aud: 15, note: "A$12-18 pp" },
       transport: []
     },
     {
@@ -1007,13 +1007,13 @@ const DAYS = [
     {
       time: "10:15", title: "Uber to Melbourne Airport",
       type: "transport",
-      desc: "Book Uber/DiDi from Collins House to Melbourne Airport Tullamarine Terminal 2. Allow 30–45 min for the drive. Aim to arrive ~10:45–11:00 for the 13:00 departure. Scoot counters open 3 hours before departure, close 60 min before.",
+      desc: "Book Uber/DiDi from Collins House to Melbourne Airport Tullamarine Terminal 2. Allow 30-45 min for the drive. Aim to arrive ~10:45-11:00 for the 13:00 departure. Scoot counters open 3 hours before departure, close 60 min before.",
       atmosphere: [],
       img: "",
       map: "https://maps.google.com/?q=Melbourne+Airport+Tullamarine+Terminal+2",
-      cost: { aud: 50, note: "A$45–60" },
+      cost: { aud: 50, note: "A$45-60" },
       transport: [
-        { mode: "Uber/DiDi", cost: "A$45–60", time: "30–40 min", note: "Midday, moderate traffic" },
+        { mode: "Uber/DiDi", cost: "A$45-60", time: "30-40 min", note: "Midday, moderate traffic" },
         { mode: "SkyBus", cost: "A$49.80 (2 pax)", time: "30 min", note: "From Southern Cross Station. More luggage-friendly." }
       ]
     },

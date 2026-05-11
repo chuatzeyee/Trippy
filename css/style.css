@@ -17,7 +17,7 @@
   --plum: #8B6E99;
   --laneway-red: #C4384E;
 
-  /* Text — coffee espresso hierarchy */
+  /* Text - coffee espresso hierarchy */
   --ink: #3D2E1F;
   --ink-secondary: #5C4F42;
   --ink-tertiary: #8A7E72;
@@ -27,16 +27,16 @@
   --page: var(--limestone);
   --card: var(--cream);
 
-  /* Borders — warm, low-opacity */
+  /* Borders -warm, low-opacity */
   --stitch: rgba(60, 46, 31, 0.10);
   --stitch-soft: rgba(60, 46, 31, 0.06);
   --stitch-strong: rgba(60, 46, 31, 0.18);
 
-  /* Depth — warm postcard shadows */
+  /* Depth -warm postcard shadows */
   --postcard: 0 1px 4px rgba(60, 46, 31, 0.06), 0 6px 16px rgba(60, 46, 31, 0.04);
   --postcard-lift: 0 6px 24px rgba(60, 46, 31, 0.10);
 
-  /* Spacing — 4px base */
+  /* Spacing -4px base */
   --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
   --sp-5: 20px; --sp-6: 24px; --sp-8: 32px; --sp-10: 40px;
   --sp-12: 48px;
@@ -80,7 +80,7 @@ a {
 }
 a:hover { text-decoration-color: var(--ocean); }
 
-/* === SIDEBAR — the laneway === */
+/* === SIDEBAR -the laneway === */
 .sidebar {
   position: fixed; top: 0; left: 0; bottom: 0;
   width: 240px;
@@ -315,7 +315,7 @@ a:hover { text-decoration-color: var(--ocean); }
   font-weight: 500;
 }
 
-/* === TIMELINE — the tram route === */
+/* === TIMELINE -the tram route === */
 .timeline { padding: var(--sp-6) var(--sp-10) var(--sp-12); }
 
 .timeline-item {
@@ -363,7 +363,7 @@ a:hover { text-decoration-color: var(--ocean); }
 .timeline-dot.nature { background: var(--eucalyptus); box-shadow: 0 0 0 2px var(--eucalyptus); }
 .timeline-dot.culture { background: var(--plum); box-shadow: 0 0 0 2px var(--plum); }
 
-/* === ACTIVITY CARD — postcards on the table === */
+/* === ACTIVITY CARD -postcards on the table === */
 .activity-card {
   flex: 1;
   background: var(--card);
@@ -410,7 +410,7 @@ a:hover { text-decoration-color: var(--ocean); }
   margin-bottom: var(--sp-3);
 }
 
-/* === ATMOSPHERE TAGS — warm Melbourne palette === */
+/* === ATMOSPHERE TAGS -warm Melbourne palette === */
 .tags { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-bottom: var(--sp-3); }
 .tag {
   display: inline-block;

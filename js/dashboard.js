@@ -5,7 +5,7 @@ function formatDateRange(start, end) {
   const s = new Date(start + 'T00:00:00');
   const e = new Date(end + 'T00:00:00');
   const opts = { day: 'numeric', month: 'short', year: 'numeric' };
-  return `${s.toLocaleDateString('en-GB', opts)} — ${e.toLocaleDateString('en-GB', opts)}`;
+  return `${s.toLocaleDateString('en-GB', opts)} - ${e.toLocaleDateString('en-GB', opts)}`;
 }
 
 function dayCount(start, end) {

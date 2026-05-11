@@ -35,7 +35,7 @@ function applyTripTheme(trip) {
     if (trip.theme.surface) root.style.setProperty('--limestone', trip.theme.surface);
     if (trip.theme.card) root.style.setProperty('--cream', trip.theme.card);
   }
-  document.title = `${trip.title} — Trippy`;
+  document.title = `${trip.title} - Trippy`;
   const favicon = document.querySelector('link[rel="icon"]');
   if (favicon && trip.emoji) {
     favicon.href = `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>${trip.emoji}</text></svg>`;
