@@ -653,7 +653,7 @@ const DAYS = [
   dayCost: { transport: 0, food: 80, activities: 64 }
 },
 {
-  num: 7, date: "Sun, 31 May", title: "Beaches & Neighborhoods", theme: "Brighton, St Kilda, Fitzroy & Collingwood",
+  num: 7, date: "Sun, 31 May", title: "Markets, Vinyl & Neighborhoods", theme: "South Melbourne, Heartland, Fitzroy & Collingwood",
   weather: { high: 15, low: 8, icon: "☀️", desc: "Sunny Intervals, 15°C" },
   activities: [
     {
@@ -667,58 +667,43 @@ const DAYS = [
       transport: []
     },
     {
-      time: "09:30", title: "Brighton Beach Bathing Boxes",
-      type: "culture",
-      desc: "93 heritage-listed wooden bathing boxes painted in vibrant colours, standing in a row along Dendy Street Beach. Privately owned (some sell for A$300k+), they're a beloved Melbourne icon. Perfect for photos against the Port Phillip Bay backdrop. In late May, the beach is quiet and the light is gorgeous. Free to visit, 30-60 min.",
-      atmosphere: ["scenic", "quiet", "touristy"],
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/PXL_20241005_062211747.MP_Brighton_Bathing_Boxes_Esplanade%2C_Brighton_VIC_3186%2C_Australia_01.jpg/960px-PXL_20241005_062211747.MP_Brighton_Bathing_Boxes_Esplanade%2C_Brighton_VIC_3186%2C_Australia_01.jpg",
-      map: "https://maps.google.com/?q=Brighton+Bathing+Boxes+Dendy+Street+Beach",
-      cost: { aud: 0, note: "Free" },
-      transport: [
-        { mode: "Train (FREE)", cost: "Free", time: "23 min", note: "Sandringham line from Flinders St to Brighton Beach station, 15-min walk to boxes" },
-        { mode: "Uber", cost: "A$20-35", time: "20 min", note: "" }
-      ]
-    },
-    {
-      time: "10:30", title: "St Kilda Beach & Pier",
-      type: "nature",
-      desc: "Melbourne's most famous beach suburb. Walk along the palm-tree-lined foreshore to St Kilda Pier. At the end of the pier's breakwater, a colony of Little Penguins nests in the rock crevices -they're best seen at dusk, but you may spot a few during the day. The pier has sweeping views of the city skyline. Luna Park's giant grinning mouth entrance is just along the Esplanade.",
-      atmosphere: ["bohemian", "relaxed", "coastal", "touristy"],
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Melbourne_%28AU%29%2C_St_Kilda_Beach_--_2019_--_1590.jpg/960px-Melbourne_%28AU%29%2C_St_Kilda_Beach_--_2019_--_1590.jpg",
-      map: "https://maps.google.com/?q=St+Kilda+Beach+Melbourne",
-      cost: { aud: 0, note: "Free" },
-      transport: [
-        { mode: "Tram (FREE)", cost: "Free", time: "15 min from Brighton", note: "Bus 600/922/923 between Brighton and St Kilda, or tram 16" },
-        { mode: "Uber", cost: "A$10-15", time: "8 min from Brighton", note: "" }
-      ]
-    },
-    {
-      time: "11:30", title: "Luna Park Melbourne",
-      type: "culture",
-      desc: "Heritage amusement park (opened 1912) with the famous grinning face entrance. Opens Sat-Sun 11 AM-6 PM. Unlimited Rides tickets A$55 pp, or just enjoy the free-entry promenade and take photos. The Scenic Railway is the world's oldest continually operating roller coaster (1912). Fun, retro atmosphere.",
-      atmosphere: ["family", "touristy", "local"],
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Melbourne%27s_Luna_Park_entrance_at_night.jpg/960px-Melbourne%27s_Luna_Park_entrance_at_night.jpg",
-      map: "https://maps.google.com/?q=Luna+Park+Melbourne",
-      cost: { aud: 0, note: "Free entry. Rides: A$55 pp unlimited, or A$30 single ride entry." },
-      booking: "https://lunapark.com.au/tickets/",
-      transport: [
-        { mode: "Walk", cost: "Free", time: "5 min from St Kilda Beach", note: "" }
-      ]
-    },
-    {
-      time: "12:30", title: "South Melbourne Market Lunch",
+      time: "09:30", title: "South Melbourne Market",
       type: "food",
-      desc: "One of Melbourne's oldest markets (est. 1867). Famous for its dim sims, fresh produce, and artisan food stalls. Try the legendary South Melbourne dim sims (deep-fried or steamed), empanadas, and fresh juice. The market has a strong community atmosphere and is less touristy than QVM. Open Sun 8am-4pm. Also home to a Cobb Lane bakery stall for pastries.",
+      desc: "One of Melbourne's oldest markets (est. 1867). Famous for its dim sims, fresh produce, and artisan food stalls. Try the legendary South Melbourne dim sims (deep-fried or steamed), empanadas, and fresh juice. The market has a strong community atmosphere and is less touristy than QVM. Open Sun 8am-4pm. Also home to a Cobb Lane bakery stall for pastries. A great Sunday morning market experience.",
       atmosphere: ["local", "foodie", "multicultural", "busy"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/South_Melbourne_Market_2019.jpg/960px-South_Melbourne_Market_2019.jpg",
       map: "https://maps.google.com/?q=South+Melbourne+Market+322+Coventry+Street",
       cost: { aud: 25, note: "A$20-30 pp" },
       transport: [
-        { mode: "Tram 96", cost: "Free", time: "15 min from St Kilda", note: "Stop at South Melbourne Market" }
+        { mode: "Tram 96 (FREE)", cost: "Free", time: "12 min from Collins House", note: "Stop at South Melbourne Market" }
       ]
     },
     {
-      time: "14:00", title: "Fitzroy -Brunswick Street",
+      time: "11:00", title: "Heartland Records",
+      type: "culture",
+      desc: "One of Melbourne's longest-running independent record stores (est. 1992). Huge range spanning new releases and deep back-catalogue across all genres. Owner Paul Cook is a walking vinyl encyclopedia -ask him for recommendations. A warm, welcoming shop that rewards a long browse. Mon-Sun 11am-5:30pm.",
+      atmosphere: ["local", "artsy", "bohemian"],
+      img: "",
+      map: "https://maps.google.com/?q=Heartland+Records+420+Victoria+Street+North+Melbourne",
+      cost: { aud: 0, note: "Free to browse" },
+      transport: [
+        { mode: "Tram 57 (FREE)", cost: "Free", time: "15 min from South Melbourne Market", note: "420 Victoria St, North Melbourne" }
+      ]
+    },
+    {
+      time: "12:00", title: "Lunch in Fitzroy",
+      type: "food",
+      desc: "Head to Fitzroy for an early lunch. Try Gelato Messina on Smith Street (famous Sydney import, wild flavours), Lune Croissanterie in the Fitzroy warehouse (arrive early, queues form fast), or a hearty bowl at Ramen Bankara on Smith St. Plenty of cosy winter-friendly cafes along Brunswick and Smith Streets.",
+      atmosphere: ["foodie", "local", "bohemian"],
+      img: "",
+      map: "https://maps.google.com/?q=Brunswick+Street+Fitzroy+Melbourne",
+      cost: { aud: 25, note: "A$20-30 pp" },
+      transport: [
+        { mode: "Tram (FREE)", cost: "Free", time: "15 min from North Melbourne", note: "Tram 11 or 86 to Fitzroy" }
+      ]
+    },
+    {
+      time: "13:30", title: "Fitzroy -Brunswick Street",
       type: "culture",
       desc: "Melbourne's bohemian heartland. Brunswick Street is a non-stop strip of vintage shops, record stores, independent bookshops, tattoo parlours, quirky bars, and cafés. Street art covers every surface. The vibe is proudly grungy yet stylish -Japanese cafés next to dive bars, fashion studios next to Ethiopian restaurants. This is where Melbourne's creative class lives.",
       atmosphere: ["bohemian", "artsy", "grungy", "multicultural", "local"],
@@ -726,12 +711,11 @@ const DAYS = [
       map: "https://maps.google.com/?q=Brunswick+Street+Fitzroy+Melbourne",
       cost: { aud: 0, note: "Free to explore" },
       transport: [
-        { mode: "Tram (FREE)", cost: "Free", time: "30 min from St Kilda", note: "Tram 16 to Flinders St, then tram 11 to Brunswick St" },
-        { mode: "Uber", cost: "A$15-25", time: "15 min", note: "" }
+        { mode: "Walk", cost: "Free", time: "Already here from lunch", note: "" }
       ]
     },
     {
-      time: "15:30", title: "Plug Seven Records",
+      time: "15:00", title: "Plug Seven Records",
       type: "culture",
       desc: "Nearly 10,000 original pressings with a deep focus on jazz, hip-hop, Afro, soul, reggae, and Latin. Owner travels overseas to source rare stock and also runs a label and analogue recording studio. One of Melbourne's most respected crate-digging spots. Mon-Sat 11am-6pm, Sun 11am-5pm.",
       atmosphere: ["artsy", "local", "bohemian"],
@@ -743,7 +727,7 @@ const DAYS = [
       ]
     },
     {
-      time: "16:30", title: "Collingwood -Smith Street",
+      time: "16:00", title: "Collingwood -Smith Street",
       type: "culture",
       desc: "Named the 'coolest neighbourhood in the world' by Time Out. Grittier than Fitzroy, less polished. Smith Street is the main artery: Vietnamese bakeries sit beside rooftop bars, independent galleries hide in converted warehouses. Visit Collingwood Yards (creative hub), browse independent boutiques, or duck into an anonymous-looking door that turns out to be a natural wine bar.",
       atmosphere: ["bohemian", "grungy", "artsy", "multicultural"],
@@ -755,7 +739,7 @@ const DAYS = [
       ]
     },
     {
-      time: "17:30", title: "Coffee at Industry Beans",
+      time: "17:00", title: "Coffee at Industry Beans",
       type: "food",
       desc: "Melbourne's most inventive specialty coffee roaster. Experimental brews, single-origin pours, and a sleek industrial-chic space in a converted Fitzroy warehouse. Try the signature espresso or a pourover. Also serves excellent brunch food.",
       atmosphere: ["artsy", "local", "foodie"],
@@ -780,7 +764,7 @@ const DAYS = [
       ]
     }
   ],
-  dayCost: { transport: 0, food: 143, activities: 0 }
+  dayCost: { transport: 0, food: 168, activities: 0 }
 },
 {
   num: 8, date: "Mon, 1 Jun", title: "Mornington Peninsula", theme: "Hot Springs, Coastal Views & Fine Dining",

@@ -338,6 +338,7 @@ function renderDays(trip) {
   const container = document.getElementById('days-container');
   if (!container || !trip.days) return;
   const toHome = (v) => (v * (trip.currency?.rate || 1)).toFixed(0);
+  const fmt = (n) => Number(n).toLocaleString();
   const sym = trip.currency?.symbol || 'A$';
   const homeSym = trip.currency?.homeSymbol || 'S$';
 
@@ -371,7 +372,7 @@ function renderDays(trip) {
         html += '</tbody></table></div>';
       }
       if (a.cost && (a.cost.aud > 0 || a.cost.note)) {
-        html += `<div class="info-section"><h4>Cost</h4><div class="cost-row"><span class="cost-label">${a.cost.note || 'Entry'}</span><span class="cost-values"><span class="cost-aud">${sym}${a.cost.aud}</span><span class="cost-sgd">~${homeSym}${toHome(a.cost.aud)}</span></span></div></div>`;
+        html += `<div class="info-section"><h4>Cost</h4><div class="cost-row"><span class="cost-label">${a.cost.note || 'Entry'}</span><span class="cost-values"><span class="cost-aud">${sym}${fmt(a.cost.aud)}</span><span class="cost-sgd">~${homeSym}${fmt(toHome(a.cost.aud))}</span></span></div></div>`;
       }
       let links = '';
       if (a.map) links += `<a href="${a.map}" target="_blank" rel="noopener" class="action-link map">📍 Map</a>`;
@@ -384,10 +385,10 @@ function renderDays(trip) {
     if (d.dayCost) {
       const totalAUD = d.dayCost.transport + d.dayCost.food + d.dayCost.activities;
       html += `<div class="day-summary"><h3>💰 Day ${d.num} Estimated Cost (per person)</h3><div class="summary-grid">
-        <div class="summary-item"><div class="label">Transport</div><div class="val">${sym}${d.dayCost.transport} <small style="color:var(--ink-tertiary)">~${homeSym}${toHome(d.dayCost.transport)}</small></div></div>
-        <div class="summary-item"><div class="label">Food & Drink</div><div class="val">${sym}${d.dayCost.food} <small style="color:var(--ink-tertiary)">~${homeSym}${toHome(d.dayCost.food)}</small></div></div>
-        <div class="summary-item"><div class="label">Activities</div><div class="val">${sym}${d.dayCost.activities} <small style="color:var(--ink-tertiary)">~${homeSym}${toHome(d.dayCost.activities)}</small></div></div>
-        <div class="summary-item" style="background:var(--bluestone,#2C363F);color:#fff;grid-column:1/-1"><div class="label" style="color:var(--tram-gold,#C5933A)">Day Total</div><div class="val" style="color:#fff">${sym}${totalAUD} <small style="color:var(--tram-gold-soft,#E8C97A)">~${homeSym}${toHome(totalAUD)}</small></div></div>
+        <div class="summary-item"><div class="label">Transport</div><div class="val">${sym}${fmt(d.dayCost.transport)} <small style="color:var(--ink-tertiary)">~${homeSym}${fmt(toHome(d.dayCost.transport))}</small></div></div>
+        <div class="summary-item"><div class="label">Food & Drink</div><div class="val">${sym}${fmt(d.dayCost.food)} <small style="color:var(--ink-tertiary)">~${homeSym}${fmt(toHome(d.dayCost.food))}</small></div></div>
+        <div class="summary-item"><div class="label">Activities</div><div class="val">${sym}${fmt(d.dayCost.activities)} <small style="color:var(--ink-tertiary)">~${homeSym}${fmt(toHome(d.dayCost.activities))}</small></div></div>
+        <div class="summary-item" style="background:var(--bluestone,#2C363F);color:#fff;grid-column:1/-1"><div class="label" style="color:var(--tram-gold,#C5933A)">Day Total</div><div class="val" style="color:#fff">${sym}${fmt(totalAUD)} <small style="color:var(--tram-gold-soft,#E8C97A)">~${homeSym}${fmt(toHome(totalAUD))}</small></div></div>
       </div></div>`;
     }
 
@@ -415,9 +416,10 @@ function calculateTripTotals(trip) {
   const travelers = trip.travelers || 2;
   const grandTotal = (parseFloat(grandPP) * travelers).toFixed(0);
   const el = (id, txt) => { const e = document.getElementById(id); if (e) e.textContent = txt; };
-  el('total-transport', `${sym}${totals.transport} (${homeSym}${toHome(totals.transport)})`);
-  el('total-food', `${sym}${totals.food} (${homeSym}${toHome(totals.food)})`);
-  el('total-activities', `${sym}${totals.activities} (${homeSym}${toHome(totals.activities)})`);
+  const fmt = (n) => Number(n).toLocaleString();
+  el('total-transport', `${sym}${fmt(totals.transport)} (${homeSym}${fmt(toHome(totals.transport))})`);
+  el('total-food', `${sym}${fmt(totals.food)} (${homeSym}${fmt(toHome(totals.food))})`);
+  el('total-activities', `${sym}${fmt(totals.activities)} (${homeSym}${fmt(toHome(totals.activities))})`);
   el('total-grand-sgd', `${homeSym}${parseFloat(grandPP).toLocaleString()}`);
   el('total-grand-sgd-2x', `${homeSym}${parseFloat(grandTotal).toLocaleString()}`);
 }
