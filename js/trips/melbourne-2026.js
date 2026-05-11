@@ -1054,4 +1054,95 @@ export const melbourne2026 = {
   coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Twelve_Apostles_Port_Campbell_National_Park_Victoria_Australia.JPG/960px-Twelve_Apostles_Port_Campbell_National_Park_Victoria_Australia.JPG",
   theme: { primary: "#C5933A", sidebar: "#2C363F", surface: "#FAF6EE", card: "#FFFCF7" },
   days: DAYS,
+  essentials: [
+    { icon: "🎫", title: "Public Transport", value: "FREE May 25-31", detail: "All trains, trams, and buses across Victoria are completely free during the first 7 days of your trip. Jun 1-3: half price, daily cap A$5.70. Saves A$200+ over the trip." },
+    { icon: "🌤️", title: "Weather", value: "8-15°C (Autumn)", detail: "Late May in Melbourne is autumn/early winter. Expect frequent showers and \"four seasons in one day.\" Pack warm layers, waterproof jacket, scarf, beanie, and comfortable walking shoes." }
+  ],
+  flights: {
+    outbound: { airline: "Scoot", code: "TR58", from: "SIN T1", to: "MEL T2", depart: "02:30 SGT, 25 May", arrive: "11:45 AEST, 25 May", duration: "7h 15m", aircraft: "Boeing 787-9" },
+    inbound: { airline: "Scoot", code: "TR59", from: "MEL T2", to: "SIN T1", depart: "13:00 AEST, 3 Jun", arrive: "19:05 SGT, 3 Jun", duration: "8h 05m", aircraft: "Boeing 787-9" }
+  },
+  accommodation: [
+    {
+      id: "collins-house", name: "Collins House by CLLIX", recommended: true,
+      img: "https://ak-d.tripcdn.com/images/20031b000001a2ucn48BF_R_960_660_R5_D.jpg",
+      address: "464 Collins St, Melbourne CBD", distance: "500m to city centre",
+      price: "A$160-350/night", rating: "9.0/10 (Trip.com)",
+      features: ["5 min walk to Flinders St Station", "In-unit washer & dryer", "Full kitchen, dishwasher", "Free WiFi, gym, BBQ terrace", "56-storey tower, built 2019", "Check-in 2pm / Check-out 10am"],
+      badge: "Recommended", badgeColor: "",
+      links: [
+        { label: "Trip.com", url: "https://www.trip.com/hotels/melbourne-hotel-detail-48497470/arise-collins-house/" },
+        { label: "Booking.com", url: "https://www.booking.com/hotel/au/collins-house-by-cllix.html" },
+        { label: "Direct", url: "https://www.cllix.com/collins-house-apartments/" }
+      ]
+    },
+    {
+      id: "adina-flinders", name: "Adina on Flinders",
+      img: "https://cf.bstatic.com/xdata/images/hotel/max500/558206743.jpg?k=955f840e0c74147d90aa0b68f2bf65a1db79aeeadb0343e658c8cf92320a4e28&o=",
+      address: "88 Flinders St, Melbourne CBD", distance: "200m to city centre",
+      price: "A$125-280/night", rating: "Highly rated (Booking.com)",
+      features: ["2 min walk to Flinders St Station", "In-unit washer & dryer", "Full kitchen, high ceilings", "Heritage building, renovated 2023", "Supermarket on ground floor", "Check-in 2pm / Check-out 11am"],
+      badge: "Best Location", badgeColor: "var(--ocean)",
+      links: [
+        { label: "Trip.com", url: "https://au.trip.com/hotels/melbourne-hotel-detail-2195146/adina-apartment-hotel-melbourne-on-flinders/" },
+        { label: "Booking.com", url: "https://www.booking.com/hotel/au/adina-apartment-melbourne-flinders-street.html" }
+      ]
+    },
+    {
+      id: "oakwood-premier", name: "Oakwood Premier",
+      img: "https://cf.bstatic.com/xdata/images/hotel/max500/349480071.jpg?k=caad30e24e3281bb44097ea7a106821f9d648e5bed8f524da36a08fd1f50a544&o=",
+      address: "202 Normanby Rd, Southbank", distance: "1.5 km to city centre",
+      price: "A$136-500/night", rating: "8.9/10 (Booking.com)",
+      features: ["25 min walk to Flinders St", "In-unit washer & dryer (apt rooms)", "Full kitchen, Nespresso", "Rooftop bar, games room, gym", "40-storey tower, opened 2021", "Check-in 3pm / Check-out 11am"],
+      badge: "", badgeColor: "",
+      links: [
+        { label: "Trip.com", url: "https://us.trip.com/hotels/southbank-hotel-detail-80947631/oakwood-premier-melbourne/" },
+        { label: "Booking.com", url: "https://www.booking.com/hotel/au/oakwood-premier-melbourne.html" }
+      ]
+    },
+    {
+      id: "milano", name: "Milano Serviced Apartments",
+      img: "https://cf.bstatic.com/xdata/images/hotel/max500/316022015.jpg?k=85cfdabe79a1c6d0ef09f4b0019608a9ae8cf6dcf3d77e4741c8afb68089d36d&o=",
+      address: "8 Franklin St, Melbourne CBD", distance: "800m to city centre",
+      price: "A$100-250/night", rating: "7.6/10 (Booking.com)",
+      features: ["12 min walk to Flinders St", "In-unit washer & dryer", "Full kitchen, balcony", "Pool, sauna, cinema, tennis", "Near Queen Victoria Market", "Check-in 2pm / Check-out 10am"],
+      badge: "Best Amenities", badgeColor: "var(--eucalyptus)",
+      links: [
+        { label: "Trip.com", url: "https://www.trip.com/hotels/melbourne-hotel-detail-735865/milano-serviced-apartments-melbourne/" },
+        { label: "Booking.com", url: "https://www.booking.com/hotel/au/milano-serviced-apartments.html" }
+      ]
+    },
+    {
+      id: "quest-docklands", name: "Quest Docklands",
+      img: "https://ak-d.tripcdn.com/images/0222u12000aqgeo3wA06D_R_960_660_R5_D.jpg",
+      address: "750 Bourke St, Docklands", distance: "1.8 km to city centre",
+      price: "A$80-200/night", rating: "8.7/10 (Booking.com)",
+      features: ["7 min walk to Southern Cross", "In-unit washer & dryer", "Full kitchen, free WiFi", "Free tram zone, waterfront", "Near Marvel Stadium", "Check-in 2pm / Check-out 10am"],
+      badge: "Best Value", badgeColor: "var(--eucalyptus)",
+      links: [
+        { label: "Trip.com", url: "https://au.trip.com/hotels/docklands-hotel-detail-6152120/quest-docklands-apartment-hotel-melbourne/" },
+        { label: "Booking.com", url: "https://www.booking.com/hotel/au/quest-docklands-apartment.en-gb.html" }
+      ]
+    }
+  ],
+  checklist: [
+    { group: "Must Book Ahead", items: [
+      { id: "gor-tour", label: "Great Ocean Road Tour", links: [{ text: "Hit The Road Boutique Tours", url: "https://www.hittheroadtours.com.au/great-ocean-road-day-tour/" }, { text: "Trip.com alternatives", url: "https://au.trip.com/things-to-do/detail/97788736/" }], meta: "A$128/pp, max 12 guests" },
+      { id: "penguin-parade", label: "Phillip Island Penguin Parade", links: [{ text: "Trip.com", url: "https://www.trip.com/things-to-do/detail/18181603/" }, { text: "Official", url: "https://bookings.penguins.org.au/" }], meta: "Underground viewing recommended" },
+      { id: "puffing-billy", label: "Puffing Billy Railway", links: [{ text: "Trip.com", url: "https://us.trip.com/things-to-do/detail/89712170/" }, { text: "Official", url: "https://puffingbillyrailway.org.au/buy-tickets/" }], meta: "Must pre-book, no walk-ups" },
+      { id: "hot-springs", label: "Peninsula Hot Springs", links: [{ text: "Trip.com", url: "https://au.trip.com/things-to-do/detail/37443146/" }, { text: "Official", url: "https://www.peninsulahotsprings.com/" }], meta: "Weekday Getaway for Two" },
+      { id: "flower-drum", label: "Flower Drum", links: [{ text: "Book farewell dinner", url: "https://www.flowerdrum.melbourne/" }], meta: "Cantonese fine dining, Market Lane" },
+      { id: "cutler-co", label: "Cutler & Co", links: [{ text: "Book Sunday supper", url: "https://www.cutlerandco.com.au/" }], meta: "Contemporary Australian, Gertrude St" },
+      { id: "skybus", label: "SkyBus Airport Transfer", links: [{ text: "Trip.com", url: "https://www.trip.com/things-to-do/detail/58708483/" }], meta: "A$28/pp, MEL to Southern Cross Station" }
+    ]},
+    { group: "Good to Book / Walk-in OK", items: [
+      { id: "skydeck", label: "Eureka Skydeck", links: [{ text: "Trip.com (from A$25)", url: "https://au.trip.com/things-to-do/detail/42459111/" }], meta: "15% off for online advance purchase" },
+      { id: "sealife", label: "SEA LIFE Aquarium", links: [{ text: "Trip.com (from A$25)", url: "https://us.trip.com/things-to-do/detail/49163571/" }], meta: "Book online for discount vs gate price" },
+      { id: "zoo", label: "Melbourne Zoo", links: [{ text: "zoo.org.au", url: "https://www.zoo.org.au/melbourne/" }], meta: "Book online for small discount" },
+      { id: "tipo00", label: "Tipo 00", links: [{ text: "tipo00.com.au", url: "https://tipo00.com.au/" }], meta: "Walk-in possible, but book to skip the wait" },
+      { id: "gimlet", label: "Gimlet", links: [{ text: "gimletmelbourne.com.au", url: "https://gimletmelbourne.com.au/" }], meta: "Andrew McConnell, CBD" },
+      { id: "chin-chin", label: "Chin Chin", links: [], meta: "Walk-in only (no reservations)" },
+      { id: "ngv-markets", label: "NGV, ACMI, Markets", links: [], meta: "No booking needed" }
+    ]}
+  ]
 };

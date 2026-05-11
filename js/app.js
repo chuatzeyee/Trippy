@@ -121,8 +121,15 @@ function renderOverview(trip) {
   }
 
   html += `<h3 class="section-heading">📌 Trip Essentials</h3>
-    <div class="overview-grid">
-      <div class="overview-card exchange-card">
+    <div class="overview-grid">`;
+
+  if (trip.essentials) {
+    trip.essentials.forEach(e => {
+      html += `<div class="overview-card"><h3>${e.icon} ${e.title}</h3><div class="value" style="font-size:18px">${e.value}</div><div class="detail">${e.detail}</div></div>`;
+    });
+  }
+
+  html += `<div class="overview-card exchange-card">
         <h3>💱 Exchange Rate</h3>
         <div class="exchange-hero">
           <div class="exchange-side"><span class="exchange-cur">${trip.currency?.code || 'AUD'}</span></div>
@@ -137,6 +144,17 @@ function renderOverview(trip) {
         </div>
       </div>
     </div>`;
+
+  if (trip.flights) {
+    html += `<h3 class="section-heading">✈️ Flights</h3><div class="overview-grid">`;
+    ['outbound', 'inbound'].forEach(dir => {
+      const f = trip.flights[dir];
+      if (!f) return;
+      const label = dir === 'outbound' ? '🛫 Outbound' : '🛬 Return';
+      html += `<div class="overview-card"><h3>${label}</h3><div style="font-family:var(--font-mono);font-size:15px;font-weight:600;margin-bottom:4px">${f.airline} ${f.code}</div><div style="font-size:14px;margin-bottom:8px"><strong>${f.from}</strong> → <strong>${f.to}</strong></div><div class="detail">${f.depart}</div><div class="detail">${f.arrive}</div><div class="detail" style="margin-top:6px">${f.duration} · ${f.aircraft}</div></div>`;
+    });
+    html += `</div>`;
+  }
 
   html += `<h3 class="section-heading">📅 ${numDays}-Day Overview</h3>
     <div class="overview-grid" style="grid-template-columns:1fr">
@@ -170,6 +188,56 @@ function renderOverview(trip) {
         </div>
       </div>
     </div>`;
+
+  if (trip.accommodation && trip.accommodation.length) {
+    html += `<h3 class="section-heading">🏨 Accommodation Options</h3>
+      <p style="font-size:13px;color:var(--ink-secondary);margin:0 0 var(--sp-3)">Click a card to select your hotel. Your choice is saved locally.</p>
+      <button class="accom-deselect" id="accom-deselect" style="display:none">✕ Clear selection</button>
+      <div class="accom-strip-wrapper"><div class="accom-strip">`;
+    trip.accommodation.forEach(a => {
+      html += `<div class="accom-card${a.recommended ? ' recommended' : ''}" data-accom="${a.id}">`;
+      if (a.img) html += `<img class="accom-card-img" src="${a.img}" alt="${a.name}" loading="lazy" onerror="this.classList.add('error');this.outerHTML='<div class=\\'accom-card-img error\\' style=\\'display:flex;align-items:center;justify-content:center;font-size:32px\\'>🏨</div>'">`;
+      html += `<div class="accom-card-body">`;
+      if (a.badge) html += `<div class="badge" ${a.badgeColor ? `style="background:${a.badgeColor}"` : ''}>${a.badge}</div>`;
+      html += `<h4>${a.name}</h4>`;
+      html += `<div class="accom-addr">${a.address} · ${a.distance}</div>`;
+      html += `<div class="accom-price">${a.price}</div>`;
+      if (a.rating) html += `<div class="accom-rating">★ ${a.rating}</div>`;
+      if (a.features) {
+        html += '<ul>';
+        a.features.forEach(f => html += `<li>${f}</li>`);
+        html += '</ul>';
+      }
+      if (a.links) {
+        html += '<div class="accom-links">';
+        a.links.forEach(l => html += `<a href="${l.url}" target="_blank" rel="noopener">${l.label}</a>`);
+        html += '</div>';
+      }
+      html += '</div></div>';
+    });
+    html += '</div></div>';
+  }
+
+  if (trip.checklist && trip.checklist.length) {
+    const totalItems = trip.checklist.reduce((n, g) => n + g.items.length, 0);
+    html += `<h3 class="section-heading">📋 Booking Checklist</h3>
+      <div class="overview-card checklist-card">
+        <div class="checklist-progress"><div class="checklist-progress-bar" style="width:0%"></div></div>
+        <div class="checklist-progress-text">0 / ${totalItems} booked</div>`;
+    trip.checklist.forEach(group => {
+      html += `<div class="checklist-group"><div class="checklist-group-title">${group.group}</div>`;
+      group.items.forEach(item => {
+        html += `<label class="checklist-item"><input type="checkbox" data-booking="${item.id}"><span class="checklist-label"><strong>${item.label}</strong>`;
+        if (item.meta) html += ` <span style="color:var(--ink-tertiary);font-size:11px">${item.meta}</span>`;
+        if (item.links && item.links.length) {
+          item.links.forEach(l => html += ` <a href="${l.url}" target="_blank" rel="noopener">${l.text}</a>`);
+        }
+        html += `</span></label>`;
+      });
+      html += '</div>';
+    });
+    html += '</div>';
+  }
 
   return html;
 }
