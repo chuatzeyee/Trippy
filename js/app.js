@@ -172,26 +172,9 @@ function renderOverview(trip) {
 
   html += `</tbody></table></div></div></div>`;
 
-  html += `<h3 class="section-heading">💰 Estimated Trip Budget (Per Person)</h3>
-    <div class="overview-grid">
-      <div class="overview-card"><h3>🚌 Transport</h3><div class="value" id="total-transport">-</div></div>
-      <div class="overview-card"><h3>🍽️ Food & Drink</h3><div class="value" id="total-food">-</div></div>
-      <div class="overview-card"><h3>🎫 Activities</h3><div class="value" id="total-activities">-</div></div>
-      <div class="overview-card"><h3>🏨 Accommodation</h3><div class="value" id="total-accommodation">-</div></div>
-    </div>
-    <div class="overview-grid" style="padding-top:0">
-      <div class="overview-card" style="background:var(--bluestone,#2C363F);color:#fff;grid-column:1/-1">
-        <h3 style="color:var(--tram-gold,#C5933A)">Estimated Trip Total</h3>
-        <div style="display:flex;gap:32px;flex-wrap:wrap;align-items:baseline">
-          <div><div class="value" style="color:#fff;font-size:24px"><span id="total-grand-aud">-</span> <span style="font-size:14px;color:var(--tram-gold-soft,#E8C97A)" id="total-grand-sgd">-</span></div><div class="detail" style="color:rgba(255,255,255,.6)">Per Person</div></div>
-          <div><div class="value" style="color:#fff;font-size:24px"><span id="total-grand-aud-2x">-</span> <span style="font-size:14px;color:var(--tram-gold-soft,#E8C97A)" id="total-grand-sgd-2x">-</span></div><div class="detail" style="color:rgba(255,255,255,.6)">For ${trip.travelers || 2} People</div></div>
-        </div>
-      </div>
-    </div>`;
-
   if (trip.accommodation && trip.accommodation.length) {
     html += `<h3 class="section-heading">🏨 Accommodation Options</h3>
-      <p style="font-size:13px;color:var(--ink-secondary);margin:0 0 var(--sp-3)">Click a card to select your hotel. Your choice is saved locally.</p>
+      <p style="font-size:13px;color:var(--ink-secondary);margin:0 0 var(--sp-3);padding-left:var(--sp-10)">Click a card to select your hotel. Your choice is saved locally.</p>
       <button class="accom-deselect" id="accom-deselect" style="display:none">✕ Clear selection</button>
       <div class="accom-strip-wrapper"><div class="accom-strip">`;
     trip.accommodation.forEach(a => {
@@ -221,13 +204,14 @@ function renderOverview(trip) {
   if (trip.checklist && trip.checklist.length) {
     const totalItems = trip.checklist.reduce((n, g) => n + g.items.length, 0);
     html += `<h3 class="section-heading">📋 Booking Checklist</h3>
+      <div style="padding:0 var(--sp-10)">
       <div class="overview-card checklist-card">
         <div class="checklist-progress"><div class="checklist-progress-bar" style="width:0%"></div></div>
         <div class="checklist-progress-text">0 / ${totalItems} booked</div>`;
     trip.checklist.forEach(group => {
       html += `<div class="checklist-group"><div class="checklist-group-title">${group.group}</div>`;
       group.items.forEach(item => {
-        html += `<label class="checklist-item"><input type="checkbox" data-booking="${item.id}"><span class="checklist-label"><strong>${item.label}</strong>`;
+        html += `<label class="checklist-item"><input type="checkbox" data-booking="${item.id}"><span class="checklist-check"></span><span class="checklist-label"><strong>${item.label}</strong>`;
         if (item.meta) html += ` <span style="color:var(--ink-tertiary);font-size:11px">${item.meta}</span>`;
         if (item.links && item.links.length) {
           item.links.forEach(l => html += ` <a href="${l.url}" target="_blank" rel="noopener">${l.text}</a>`);
@@ -236,8 +220,25 @@ function renderOverview(trip) {
       });
       html += '</div>';
     });
-    html += '</div>';
+    html += '</div></div>';
   }
+
+  html += `<h3 class="section-heading">💰 Estimated Trip Budget (Per Person)</h3>
+    <div class="overview-grid">
+      <div class="overview-card"><h3>🚌 Transport</h3><div class="value" id="total-transport">-</div></div>
+      <div class="overview-card"><h3>🍽️ Food & Drink</h3><div class="value" id="total-food">-</div></div>
+      <div class="overview-card"><h3>🎫 Activities</h3><div class="value" id="total-activities">-</div></div>
+      <div class="overview-card"><h3>🏨 Accommodation</h3><div class="value" id="total-accommodation">-</div></div>
+    </div>
+    <div class="overview-grid" style="padding-top:0">
+      <div class="overview-card" style="background:var(--bluestone,#2C363F);color:#fff;grid-column:1/-1">
+        <h3 style="color:var(--tram-gold,#C5933A)">Estimated Trip Total</h3>
+        <div style="display:flex;gap:32px;flex-wrap:wrap;align-items:baseline">
+          <div><div class="value" style="color:#fff;font-size:24px"><span id="total-grand-aud">-</span> <span style="font-size:14px;color:var(--tram-gold-soft,#E8C97A)" id="total-grand-sgd">-</span></div><div class="detail" style="color:rgba(255,255,255,.6)">Per Person</div></div>
+          <div><div class="value" style="color:#fff;font-size:24px"><span id="total-grand-aud-2x">-</span> <span style="font-size:14px;color:var(--tram-gold-soft,#E8C97A)" id="total-grand-sgd-2x">-</span></div><div class="detail" style="color:rgba(255,255,255,.6)">For ${trip.travelers || 2} People</div></div>
+        </div>
+      </div>
+    </div>`;
 
   return html;
 }

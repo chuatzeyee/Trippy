@@ -639,7 +639,7 @@ a:hover { text-decoration-color: var(--ocean); }
 
 /* === SECTION HEADINGS === */
 .section-heading {
-  padding: var(--sp-2) var(--sp-10) var(--sp-1);
+  padding: var(--sp-6) var(--sp-10) var(--sp-1);
   font-family: var(--font-display);
   font-size: 20px;
   font-weight: 400;
