@@ -1017,7 +1017,6 @@ a:hover { text-decoration-color: var(--ocean); }
   height: 20px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
 }
 .flight-card-code {
   font-family: var(--font-mono);
