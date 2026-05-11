@@ -278,19 +278,25 @@ function renderOverview(trip) {
     html += '</div></div>';
   }
 
-  html += `<h3 class="section-heading">💰 Estimated Trip Budget (Per Person)</h3>
+  const homeSym = trip.currency?.homeSymbol || 'S$';
+  const fixedHtml = trip.fixedCosts ? `
     <div class="overview-grid">
+      <div class="overview-card"><h3>✈️ Flights</h3><div class="value">${homeSym}${trip.fixedCosts.flights.totalSGD.toLocaleString()}</div><div class="detail">${homeSym}${trip.fixedCosts.flights.perPerson.toLocaleString()} pp</div><div class="detail">${trip.fixedCosts.flights.note}</div></div>
+      <div class="overview-card"><h3>🏨 Accommodation</h3><div class="value">${homeSym}${trip.fixedCosts.accommodation.totalSGD.toLocaleString()}</div><div class="detail">${homeSym}${trip.fixedCosts.accommodation.perPerson.toLocaleString()} pp (${trip.fixedCosts.accommodation.nights} nights)</div><div class="detail">${trip.fixedCosts.accommodation.note}</div></div>
+    </div>` : '';
+  html += `<h3 class="section-heading">💰 Trip Budget (Per Person)</h3>
+    ${fixedHtml}
+    <div class="overview-grid"${trip.fixedCosts ? ' style="padding-top:0"' : ''}>
       <div class="overview-card"><h3>🚌 Transport</h3><div class="value" id="total-transport">-</div></div>
       <div class="overview-card"><h3>🍽️ Food & Drink</h3><div class="value" id="total-food">-</div></div>
       <div class="overview-card"><h3>🎫 Activities</h3><div class="value" id="total-activities">-</div></div>
-      <div class="overview-card"><h3>🏨 Accommodation</h3><div class="value" id="total-accommodation">-</div></div>
     </div>
     <div class="overview-grid" style="padding-top:0">
       <div class="overview-card" style="background:var(--bluestone,#2C363F);color:#fff;grid-column:1/-1">
-        <h3 style="color:var(--tram-gold,#C5933A)">Estimated Trip Total</h3>
+        <h3 style="color:var(--tram-gold,#C5933A)">Trip Total</h3>
         <div style="display:flex;gap:32px;flex-wrap:wrap;align-items:baseline">
-          <div><div class="value" style="color:#fff;font-size:24px"><span id="total-grand-aud">-</span> <span style="font-size:14px;color:var(--tram-gold-soft,#E8C97A)" id="total-grand-sgd">-</span></div><div class="detail" style="color:rgba(255,255,255,.6)">Per Person</div></div>
-          <div><div class="value" style="color:#fff;font-size:24px"><span id="total-grand-aud-2x">-</span> <span style="font-size:14px;color:var(--tram-gold-soft,#E8C97A)" id="total-grand-sgd-2x">-</span></div><div class="detail" style="color:rgba(255,255,255,.6)">For ${trip.travelers || 2} People</div></div>
+          <div><div class="value" style="color:#fff;font-size:24px"><span id="total-grand-sgd">-</span></div><div class="detail" style="color:rgba(255,255,255,.6)">Per Person</div></div>
+          <div><div class="value" style="color:#fff;font-size:24px"><span id="total-grand-sgd-2x">-</span></div><div class="detail" style="color:rgba(255,255,255,.6)">For ${trip.travelers || 2} People</div></div>
         </div>
       </div>
     </div>`;
@@ -376,12 +382,11 @@ function renderDays(trip) {
     html += '</div>';
 
     if (d.dayCost) {
-      const totalAUD = d.dayCost.transport + d.dayCost.food + d.dayCost.activities + d.dayCost.accommodation;
+      const totalAUD = d.dayCost.transport + d.dayCost.food + d.dayCost.activities;
       html += `<div class="day-summary"><h3>💰 Day ${d.num} Estimated Cost (per person)</h3><div class="summary-grid">
         <div class="summary-item"><div class="label">Transport</div><div class="val">${sym}${d.dayCost.transport} <small style="color:var(--ink-tertiary)">~${homeSym}${toHome(d.dayCost.transport)}</small></div></div>
         <div class="summary-item"><div class="label">Food & Drink</div><div class="val">${sym}${d.dayCost.food} <small style="color:var(--ink-tertiary)">~${homeSym}${toHome(d.dayCost.food)}</small></div></div>
         <div class="summary-item"><div class="label">Activities</div><div class="val">${sym}${d.dayCost.activities} <small style="color:var(--ink-tertiary)">~${homeSym}${toHome(d.dayCost.activities)}</small></div></div>
-        <div class="summary-item"><div class="label">Accommodation</div><div class="val">${sym}${d.dayCost.accommodation} <small style="color:var(--ink-tertiary)">~${homeSym}${toHome(d.dayCost.accommodation)}</small></div></div>
         <div class="summary-item" style="background:var(--bluestone,#2C363F);color:#fff;grid-column:1/-1"><div class="label" style="color:var(--tram-gold,#C5933A)">Day Total</div><div class="val" style="color:#fff">${sym}${totalAUD} <small style="color:var(--tram-gold-soft,#E8C97A)">~${homeSym}${toHome(totalAUD)}</small></div></div>
       </div></div>`;
     }
@@ -397,24 +402,24 @@ function calculateTripTotals(trip) {
   const sym = trip.currency?.symbol || 'A$';
   const homeSym = trip.currency?.homeSymbol || 'S$';
 
-  let totals = { transport: 0, food: 0, activities: 0, accommodation: 0 };
+  let totals = { transport: 0, food: 0, activities: 0 };
   trip.days.forEach(d => {
     if (!d.dayCost) return;
     totals.transport += d.dayCost.transport;
     totals.food += d.dayCost.food;
     totals.activities += d.dayCost.activities;
-    totals.accommodation += d.dayCost.accommodation;
   });
-  const grand = totals.transport + totals.food + totals.activities + totals.accommodation;
+  const dailySGD = toHome(totals.transport + totals.food + totals.activities);
+  const fixedPP = trip.fixedCosts ? (trip.fixedCosts.flights.perPerson + trip.fixedCosts.accommodation.perPerson) : 0;
+  const grandPP = (parseFloat(dailySGD) + fixedPP).toFixed(0);
+  const travelers = trip.travelers || 2;
+  const grandTotal = (parseFloat(grandPP) * travelers).toFixed(0);
   const el = (id, txt) => { const e = document.getElementById(id); if (e) e.textContent = txt; };
-  el('total-transport', `${sym}${totals.transport}`);
-  el('total-food', `${sym}${totals.food}`);
-  el('total-activities', `${sym}${totals.activities}`);
-  el('total-accommodation', `${sym}${totals.accommodation}`);
-  el('total-grand-aud', `${sym}${grand}`);
-  el('total-grand-sgd', `~${homeSym}${toHome(grand)}`);
-  el('total-grand-aud-2x', `${sym}${grand * (trip.travelers || 2)}`);
-  el('total-grand-sgd-2x', `~${homeSym}${toHome(grand * (trip.travelers || 2))}`);
+  el('total-transport', `${sym}${totals.transport} (${homeSym}${toHome(totals.transport)})`);
+  el('total-food', `${sym}${totals.food} (${homeSym}${toHome(totals.food)})`);
+  el('total-activities', `${sym}${totals.activities} (${homeSym}${toHome(totals.activities)})`);
+  el('total-grand-sgd', `${homeSym}${parseFloat(grandPP).toLocaleString()}`);
+  el('total-grand-sgd-2x', `${homeSym}${parseFloat(grandTotal).toLocaleString()}`);
 }
 
 function initDayCounter(trip) {

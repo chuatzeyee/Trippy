@@ -9,7 +9,7 @@ const DAYS = [
     {
       time: "02:30", end: "11:45", title: "Scoot TR58: Singapore → Melbourne",
       type: "transport",
-      desc: "Depart Singapore Changi Terminal 1 at 02:30. Boeing 787-9, 7h15m flight. Arrive Melbourne Tullamarine Terminal 2 at 11:45 local time. Budget food on Scoot is not included -pre-book meals on the Scoot app or eat at Changi before boarding.",
+      desc: "Scoot Plus (TR58). Depart Singapore Changi Terminal 1 at 02:30. Boeing 787-9, 7h15m flight. Arrive Melbourne Tullamarine Terminal 2 at 11:45 local time. In-flight meals included with Scoot Plus tickets. Extra legroom, 30kg checked baggage, and priority boarding.",
       atmosphere: [],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Scoot_Boeing_787_on_finals_at_Singapore_Changi_Airport.jpg/960px-Scoot_Boeing_787_on_finals_at_Singapore_Changi_Airport.jpg",
       map: "https://maps.google.com/?q=Melbourne+Airport+Tullamarine",
@@ -37,7 +37,7 @@ const DAYS = [
       atmosphere: [],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Melbourne_CBD-CollinsSt_East.jpg/960px-Melbourne_CBD-CollinsSt_East.jpg",
       map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
-      cost: { aud: 200, note: "~A$200-350/night for 1BR apartment" },
+      cost: { aud: 0, note: "Pre-booked via Trip.com" },
       booking: "https://www.cllix.com/collins-house-apartments/",
       transport: []
     },
@@ -126,7 +126,7 @@ const DAYS = [
       transport: []
     }
   ],
-  dayCost: { transport: 50, food: 75, activities: 0, accommodation: 250 }
+  dayCost: { transport: 50, food: 75, activities: 0 }
 },
 {
   num: 2, date: "Tue, 26 May", title: "Melbourne Culture & Markets", theme: "Queen Vic, Chinatown, NGV & Botanic Gardens",
@@ -246,7 +246,7 @@ const DAYS = [
       ]
     }
   ],
-  dayCost: { transport: 0, food: 115, activities: 0, accommodation: 250 }
+  dayCost: { transport: 0, food: 115, activities: 0 }
 },
 {
   num: 3, date: "Wed, 27 May", title: "Great Ocean Road", theme: "12 Apostles, Wild Koalas, Rainforest & Shipwreck Coast",
@@ -357,7 +357,7 @@ const DAYS = [
       ]
     }
   ],
-  dayCost: { transport: 128, food: 85, activities: 0, accommodation: 250 }
+  dayCost: { transport: 128, food: 85, activities: 0 }
 },
 {
   num: 4, date: "Thu, 28 May", title: "Melbourne Exploration", theme: "Aquarium, Skydeck, Museum & Richmond",
@@ -450,7 +450,7 @@ const DAYS = [
       ]
     }
   ],
-  dayCost: { transport: 0, food: 65, activities: 112, accommodation: 250 }
+  dayCost: { transport: 0, food: 65, activities: 112 }
 },
 {
   num: 5, date: "Fri, 29 May", title: "Phillip Island Wildlife", theme: "Penguins, Koalas, Seals & Coastal Wildlife",
@@ -554,7 +554,7 @@ const DAYS = [
       transport: []
     }
   ],
-  dayCost: { transport: 250, food: 60, activities: 190, accommodation: 250 }
+  dayCost: { transport: 250, food: 60, activities: 190 }
 },
 {
   num: 6, date: "Sat, 30 May", title: "Puffing Billy & Dandenong Ranges", theme: "Heritage Railway, Rainforest & Italian Dinner",
@@ -650,7 +650,7 @@ const DAYS = [
       ]
     }
   ],
-  dayCost: { transport: 0, food: 80, activities: 64, accommodation: 250 }
+  dayCost: { transport: 0, food: 80, activities: 64 }
 },
 {
   num: 7, date: "Sun, 31 May", title: "Beaches & Neighborhoods", theme: "Brighton, St Kilda, Fitzroy & Collingwood",
@@ -780,7 +780,7 @@ const DAYS = [
       ]
     }
   ],
-  dayCost: { transport: 0, food: 143, activities: 0, accommodation: 250 }
+  dayCost: { transport: 0, food: 143, activities: 0 }
 },
 {
   num: 8, date: "Mon, 1 Jun", title: "Mornington Peninsula", theme: "Hot Springs, Coastal Views & Fine Dining",
@@ -880,7 +880,7 @@ const DAYS = [
       ]
     }
   ],
-  dayCost: { transport: 100, food: 130, activities: 118, accommodation: 250 }
+  dayCost: { transport: 100, food: 130, activities: 118 }
 },
 {
   num: 9, date: "Tue, 2 Jun", title: "Zoo, Museums & Shopping", theme: "Melbourne Zoo, Souvenirs & Farewell Dinner",
@@ -994,7 +994,7 @@ const DAYS = [
       transport: []
     }
   ],
-  dayCost: { transport: 10, food: 173, activities: 55, accommodation: 250 }
+  dayCost: { transport: 10, food: 173, activities: 55 }
 },
 {
   num: 10, date: "Wed, 3 Jun", title: "Departure Day", theme: "Farewell Melbourne",
@@ -1056,7 +1056,7 @@ const DAYS = [
     {
       time: "13:00", title: "Scoot TR59: Melbourne → Singapore",
       type: "transport",
-      desc: "Depart Melbourne Tullamarine at 13:00. Boeing 787-9, 8h05m flight. Arrive Singapore Changi Terminal 1 at ~19:05 local time. Pre-book meals on the Scoot app. Welcome home.",
+      desc: "Scoot Plus (TR59). Depart Melbourne Tullamarine at 13:00. Boeing 787-9, 8h05m flight. Arrive Singapore Changi Terminal 1 at ~19:05 local time. In-flight meals included with Scoot Plus. Welcome home.",
       atmosphere: [],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Scoot_Boeing_787_%289V-OJF%29_at_Melbourne_International_Airport.jpg/960px-Scoot_Boeing_787_%289V-OJF%29_at_Melbourne_International_Airport.jpg",
       map: "https://maps.google.com/?q=Melbourne+Airport+Tullamarine+Terminal+2",
@@ -1064,7 +1064,7 @@ const DAYS = [
       transport: []
     }
   ],
-  dayCost: { transport: 50, food: 15, activities: 0, accommodation: 0 }
+  dayCost: { transport: 50, food: 15, activities: 0 }
 }
 ];
 
@@ -1079,6 +1079,10 @@ export const melbourne2026 = {
   currency: { code: "AUD", symbol: "A$", rate: RATE, homeCurrency: "SGD", homeSymbol: "S$" },
   coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Twelve_Apostles_Port_Campbell_National_Park_Victoria_Australia.JPG/960px-Twelve_Apostles_Port_Campbell_National_Park_Victoria_Australia.JPG",
   theme: { primary: "#C5933A", sidebar: "#2C363F", surface: "#FAF6EE", card: "#FFFCF7" },
+  fixedCosts: {
+    flights: { totalSGD: 2405.08, perPerson: 1202.54, note: "Scoot Plus for 2 (TR58 + TR59), in-flight meals inclusive" },
+    accommodation: { totalSGD: 1441.18, perPerson: 720.59, nights: 9, note: "Collins House Apartments by CLLIX, 9 nights via Trip.com" }
+  },
   days: DAYS,
   essentials: [
     { icon: "🎫", title: "Public Transport", value: "FREE May 25-31", detail: "All trains, trams, and buses across Victoria are completely free during the first 7 days of your trip. Jun 1-3: half price, daily cap A$5.70. Saves A$200+ over the trip." },
