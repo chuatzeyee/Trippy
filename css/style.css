@@ -973,6 +973,173 @@ a:hover { text-decoration-color: var(--ocean); }
   z-index: 99;
 }
 
+/* === FLIGHT CARDS === */
+.flight-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
+  gap: var(--sp-4);
+  padding: var(--sp-6) var(--sp-10);
+}
+.flight-card {
+  background: var(--card);
+  border-radius: var(--r-lg);
+  box-shadow: var(--postcard);
+  border: 1px solid var(--stitch-soft);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.flight-card:hover {
+  box-shadow: var(--postcard-lift);
+  transform: translateY(-2px);
+}
+.flight-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-3) var(--sp-5);
+  background: var(--bluestone);
+  color: #fff;
+}
+.flight-card-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  opacity: 0.7;
+}
+.flight-card-airline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.flight-card-logo {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+.flight-card-code {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--tram-gold-soft);
+}
+.flight-route {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: var(--sp-6) var(--sp-5) var(--sp-4);
+}
+.flight-airport {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 70px;
+}
+.flight-airport-code {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.flight-airport-name {
+  font-size: 11px;
+  color: var(--ink-tertiary);
+  text-align: center;
+  max-width: 90px;
+}
+.flight-path {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0 var(--sp-3);
+  min-width: 100px;
+}
+.flight-path-line {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, var(--stitch-strong), var(--tram-gold), var(--stitch-strong));
+  border-radius: 1px;
+  position: relative;
+}
+.flight-path-line::before {
+  content: '✈';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  background: var(--card);
+  padding: 0 6px;
+  line-height: 1;
+}
+.flight-path-duration {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--tram-gold);
+  letter-spacing: 0.5px;
+}
+.flight-times {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin: 0 var(--sp-5);
+  background: var(--stitch-soft);
+  border-radius: var(--r-sm);
+  overflow: hidden;
+}
+.flight-time-block {
+  background: var(--limestone);
+  padding: var(--sp-3) var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.flight-time-block:first-child { border-radius: var(--r-sm) 0 0 var(--r-sm); }
+.flight-time-block:last-child { border-radius: 0 var(--r-sm) var(--r-sm) 0; }
+.flight-time-label {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ink-ghost);
+}
+.flight-time-value {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.flight-time-date {
+  font-size: 11px;
+  color: var(--ink-tertiary);
+}
+.flight-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-4);
+  padding: var(--sp-3) var(--sp-5) var(--sp-4);
+}
+.flight-meta-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--ink-tertiary);
+  padding: 3px 10px;
+  background: var(--limestone);
+  border-radius: var(--r-pill);
+}
+
 /* === RESPONSIVE === */
 @media (max-width: 900px) {
   .sidebar { width: 240px; transform: translateX(-100%); transition: transform 0.3s ease; }
@@ -983,7 +1150,8 @@ a:hover { text-decoration-color: var(--ocean); }
   .hero { padding: var(--sp-8) var(--sp-5); }
   .hero h2 { font-size: 26px; }
   .overview-grid,
-  .compare-grid { padding: var(--sp-4) var(--sp-5); }
+  .compare-grid,
+  .flight-cards { padding: var(--sp-4) var(--sp-5); }
   .compare-grid { grid-template-columns: 1fr; }
   .timeline { padding: var(--sp-4) var(--sp-5) var(--sp-10); }
   .day-header { padding: var(--sp-6) var(--sp-5) var(--sp-4); }

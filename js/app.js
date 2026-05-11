@@ -154,12 +154,59 @@ function renderOverview(trip) {
     </div>`;
 
   if (trip.flights) {
-    html += `<h3 class="section-heading">✈️ Flights</h3><div class="overview-grid">`;
+    html += `<h3 class="section-heading">✈️ Flights</h3><div class="flight-cards">`;
     ['outbound', 'inbound'].forEach(dir => {
       const f = trip.flights[dir];
       if (!f) return;
-      const label = dir === 'outbound' ? '🛫 Outbound' : '🛬 Return';
-      html += `<div class="overview-card"><h3>${label}</h3><div style="font-family:var(--font-mono);font-size:15px;font-weight:600;margin-bottom:4px">${f.airline} ${f.code}</div><div style="font-size:14px;margin-bottom:8px"><strong>${f.from}</strong> → <strong>${f.to}</strong></div><div class="detail">${f.depart}</div><div class="detail">${f.arrive}</div><div class="detail" style="margin-top:6px">${f.duration} · ${f.aircraft}</div></div>`;
+      const label = dir === 'outbound' ? 'Outbound' : 'Return';
+      const fromCode = f.from.split(' ')[0];
+      const toCode = f.to.split(' ')[0];
+      const fromTerminal = f.from.includes(' ') ? f.from.split(' ').slice(1).join(' ') : '';
+      const toTerminal = f.to.includes(' ') ? f.to.split(' ').slice(1).join(' ') : '';
+      const departParts = f.depart.match(/^(\d{1,2}:\d{2})\s*(\w+)?,?\s*(.*)$/);
+      const arriveParts = f.arrive.match(/^(\d{1,2}:\d{2})\s*(\w+)?,?\s*(.*)$/);
+      const dTime = departParts ? departParts[1] : f.depart;
+      const dTz = departParts && departParts[2] ? departParts[2] : '';
+      const dDate = departParts && departParts[3] ? departParts[3] : '';
+      const aTime = arriveParts ? arriveParts[1] : f.arrive;
+      const aTz = arriveParts && arriveParts[2] ? arriveParts[2] : '';
+      const aDate = arriveParts && arriveParts[3] ? arriveParts[3] : '';
+      const logoHtml = f.logo ? `<img class="flight-card-logo" src="${f.logo}" alt="${f.airline}">` : '';
+      html += `<div class="flight-card">
+        <div class="flight-card-header">
+          <span class="flight-card-label">${label}</span>
+          <div class="flight-card-airline">${logoHtml}<span class="flight-card-code">${f.code}</span></div>
+        </div>
+        <div class="flight-route">
+          <div class="flight-airport">
+            <span class="flight-airport-code">${fromCode}</span>
+            <span class="flight-airport-name">${fromTerminal}</span>
+          </div>
+          <div class="flight-path">
+            <div class="flight-path-line"></div>
+            <span class="flight-path-duration">${f.duration}</span>
+          </div>
+          <div class="flight-airport">
+            <span class="flight-airport-code">${toCode}</span>
+            <span class="flight-airport-name">${toTerminal}</span>
+          </div>
+        </div>
+        <div class="flight-times">
+          <div class="flight-time-block">
+            <span class="flight-time-label">Departs</span>
+            <span class="flight-time-value">${dTime} <small style="font-size:10px;opacity:0.6">${dTz}</small></span>
+            <span class="flight-time-date">${dDate}</span>
+          </div>
+          <div class="flight-time-block">
+            <span class="flight-time-label">Arrives</span>
+            <span class="flight-time-value">${aTime} <small style="font-size:10px;opacity:0.6">${aTz}</small></span>
+            <span class="flight-time-date">${aDate}</span>
+          </div>
+        </div>
+        <div class="flight-meta">
+          <span class="flight-meta-tag">🛩️ ${f.aircraft}</span>
+        </div>
+      </div>`;
     });
     html += `</div>`;
   }

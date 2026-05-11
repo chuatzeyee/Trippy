@@ -1059,8 +1059,8 @@ export const melbourne2026 = {
     { icon: "🌤️", title: "Weather", value: "8-15°C (Autumn)", detail: "Late May in Melbourne is autumn/early winter. Expect frequent showers and \"four seasons in one day.\" Pack warm layers, waterproof jacket, scarf, beanie, and comfortable walking shoes." }
   ],
   flights: {
-    outbound: { airline: "Scoot", code: "TR58", from: "SIN T1", to: "MEL T2", depart: "02:30 SGT, 25 May", arrive: "11:45 AEST, 25 May", duration: "7h 15m", aircraft: "Boeing 787-9" },
-    inbound: { airline: "Scoot", code: "TR59", from: "MEL T2", to: "SIN T1", depart: "13:00 AEST, 3 Jun", arrive: "19:05 SGT, 3 Jun", duration: "8h 05m", aircraft: "Boeing 787-9" }
+    outbound: { airline: "Scoot", code: "TR58", logo: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Scoot_logo.svg", from: "SIN T1", to: "MEL T2", depart: "02:30 SGT, 25 May", arrive: "11:45 AEST, 25 May", duration: "7h 15m", aircraft: "Boeing 787-9" },
+    inbound: { airline: "Scoot", code: "TR59", logo: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Scoot_logo.svg", from: "MEL T2", to: "SIN T1", depart: "13:00 AEST, 3 Jun", arrive: "19:05 SGT, 3 Jun", duration: "8h 05m", aircraft: "Boeing 787-9" }
   },
   accommodation: [
     {
