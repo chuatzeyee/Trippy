@@ -1,6 +1,11 @@
 import { melbourne2026 } from './melbourne-2026.js';
 
 const STORAGE_KEY = 'trippy_custom_trips';
+const BUILTIN_IDS = new Set([melbourne2026.id]);
+
+export function isCustomTrip(id) {
+  return !BUILTIN_IDS.has(id);
+}
 
 function getCustomTrips() {
   try {

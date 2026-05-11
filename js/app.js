@@ -1,17 +1,12 @@
 import { addRoute, start, navigate } from './router.js';
-import { getTripById, getAllTrips } from './trips/registry.js';
+import { getTripById, getAllTrips, isCustomTrip } from './trips/registry.js';
 import { renderDashboard } from './dashboard.js';
+import { initDayBuilder } from './day-builder-ui.js';
 
 let currentTrip = null;
 
-addRoute('/', () => {
-  document.body.classList.remove('trip-view');
-  document.body.classList.add('dashboard-view');
-  renderDashboard();
-});
-
-addRoute('/trip/:tripId', (params) => {
-  const trip = getTripById(params.tripId);
+function renderTrip(tripId) {
+  const trip = getTripById(tripId);
   if (!trip) return navigate('/');
   currentTrip = trip;
   document.body.classList.remove('dashboard-view');
@@ -25,6 +20,19 @@ addRoute('/trip/:tripId', (params) => {
   initAccomSelector(trip);
   initChecklist(trip);
   initMobileMenu();
+  if (isCustomTrip(trip.id)) {
+    initDayBuilder(trip, () => renderTrip(trip.id));
+  }
+}
+
+addRoute('/', () => {
+  document.body.classList.remove('trip-view');
+  document.body.classList.add('dashboard-view');
+  renderDashboard();
+});
+
+addRoute('/trip/:tripId', (params) => {
+  renderTrip(params.tripId);
 });
 
 function applyTripTheme(trip) {
