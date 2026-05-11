@@ -706,14 +706,16 @@ const DAYS = [
       ]
     },
     {
-      time: "12:30", title: "Lunch on Acland Street, St Kilda",
+      time: "12:30", title: "South Melbourne Market Lunch",
       type: "food",
-      desc: "St Kilda's main dining strip. Famous for European cake shops (Monarch Cakes, Acland Street), brunch cafés, and eclectic restaurants. Try Lau's Kitchen for Vietnamese, Batch Espresso for brunch, or Cicciolina for wine and Mediterranean plates. St Kilda on a Sunday is buzzy, with the Esplanade Market running along the foreshore (weather permitting).",
-      atmosphere: ["bohemian", "foodie", "local", "multicultural"],
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Acland_Street_in_St_Kilda.jpg/960px-Acland_Street_in_St_Kilda.jpg",
-      map: "https://maps.google.com/?q=Acland+Street+St+Kilda+Melbourne",
-      cost: { aud: 30, note: "A$25-35 pp" },
-      transport: []
+      desc: "One of Melbourne's oldest markets (est. 1867). Famous for its dim sims, fresh produce, and artisan food stalls. Try the legendary South Melbourne dim sims (deep-fried or steamed), empanadas, and fresh juice. The market has a strong community atmosphere and is less touristy than QVM. Open Sun 8am-4pm. Also home to a Cobb Lane bakery stall for pastries.",
+      atmosphere: ["local", "foodie", "multicultural", "busy"],
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/South_Melbourne_Market_2019.jpg/960px-South_Melbourne_Market_2019.jpg",
+      map: "https://maps.google.com/?q=South+Melbourne+Market+322+Coventry+Street",
+      cost: { aud: 25, note: "A$20-30 pp" },
+      transport: [
+        { mode: "Tram 96", cost: "Free", time: "15 min from St Kilda", note: "Stop at South Melbourne Market" }
+      ]
     },
     {
       time: "14:00", title: "Fitzroy -Brunswick Street",
@@ -729,7 +731,19 @@ const DAYS = [
       ]
     },
     {
-      time: "16:00", title: "Collingwood -Smith Street",
+      time: "15:30", title: "Plug Seven Records",
+      type: "culture",
+      desc: "Nearly 10,000 original pressings with a deep focus on jazz, hip-hop, Afro, soul, reggae, and Latin. Owner travels overseas to source rare stock and also runs a label and analogue recording studio. One of Melbourne's most respected crate-digging spots. Mon-Sat 11am-6pm, Sun 11am-5pm.",
+      atmosphere: ["artsy", "local", "bohemian"],
+      img: "",
+      map: "https://maps.google.com/?q=Plug+Seven+Records+313A+Smith+Street+Fitzroy",
+      cost: { aud: 0, note: "Free to browse" },
+      transport: [
+        { mode: "Walk", cost: "Free", time: "5 min from Brunswick St", note: "313A Smith St, Fitzroy" }
+      ]
+    },
+    {
+      time: "16:30", title: "Collingwood -Smith Street",
       type: "culture",
       desc: "Named the 'coolest neighbourhood in the world' by Time Out. Grittier than Fitzroy, less polished. Smith Street is the main artery: Vietnamese bakeries sit beside rooftop bars, independent galleries hide in converted warehouses. Visit Collingwood Yards (creative hub), browse independent boutiques, or duck into an anonymous-looking door that turns out to be a natural wine bar.",
       atmosphere: ["bohemian", "grungy", "artsy", "multicultural"],
@@ -737,7 +751,7 @@ const DAYS = [
       map: "https://maps.google.com/?q=Smith+Street+Collingwood+Melbourne",
       cost: { aud: 0, note: "Free to explore" },
       transport: [
-        { mode: "Walk", cost: "Free", time: "10 min from Brunswick St", note: "" }
+        { mode: "Walk", cost: "Free", time: "5 min from Plug Seven", note: "Continue up Smith St" }
       ]
     },
     {
@@ -766,7 +780,7 @@ const DAYS = [
       ]
     }
   ],
-  dayCost: { transport: 0, food: 148, activities: 0, accommodation: 250 }
+  dayCost: { transport: 0, food: 143, activities: 0, accommodation: 250 }
 },
 {
   num: 8, date: "Mon, 1 Jun", title: "Mornington Peninsula", theme: "Hot Springs, Coastal Views & Fine Dining",
@@ -873,14 +887,16 @@ const DAYS = [
   weather: { high: 14, low: 7, icon: "☁️", desc: "Cool, Overcast" },
   activities: [
     {
-      time: "08:30", title: "Breakfast at Hotel",
+      time: "08:30", title: "Breakfast at Cobb Lane CBD",
       type: "food",
-      desc: "Self-catering or walk to Market Lane Coffee at Collins Quarter for a final Melbourne flat white.",
-      atmosphere: [],
+      desc: "The first CBD outpost of the beloved Yarraville artisan bakery (est. 2013 by ex-Noma/Vue de Monde chef Matt Forbes). Slow-fermented sourdough, flaky croissants, loaded focaccias, and excellent pastries all baked on-site. A proper Melbourne breakfast before a big day. Mon-Fri 7am-6pm, Sat-Sun 8am-3pm.",
+      atmosphere: ["foodie", "local", "artsy"],
       img: "",
-      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
-      cost: { aud: 10 },
-      transport: []
+      map: "https://maps.google.com/?q=Cobb+Lane+17+Bennetts+Lane+Melbourne",
+      cost: { aud: 18, note: "A$15-22 pp" },
+      transport: [
+        { mode: "Walk", cost: "Free", time: "8 min from Collins House", note: "17 Bennetts Lane, off Little Lonsdale St" }
+      ]
     },
     {
       time: "09:30", title: "Melbourne Zoo",
@@ -921,17 +937,27 @@ const DAYS = [
       ]
     },
     {
-      time: "15:30", title: "DFO South Wharf (Outlet Shopping)",
+      time: "15:30", title: "Wax Museum Records",
       type: "culture",
-      desc: "If you want bargains: 180+ outlet stores with up to 70% off retail. Armani, Ralph Lauren, Calvin Klein, Tommy Hilfiger, Nike Factory, Kathmandu, Converse, Levi's. Waterfront location along the Yarra. Good for stocking up on Australian-brand clothing at discount prices.",
-      atmosphere: ["busy", "local"],
+      desc: "Iconic Melbourne institution since 2006, internationally recognized as one of the world's best record shops. Founded by DJs Aux One and Mixa in a basement on Flinders Street. Strong on hip-hop, R&B, soul, jazz, and techno, plus an in-house label. The kind of store where the owner pulls out a rare press and tells you its story. Mon-Fri 11am-6pm, Sat 11am-5pm.",
+      atmosphere: ["artsy", "local", "bohemian"],
       img: "",
-      map: "https://maps.google.com/?q=DFO+South+Wharf+Melbourne",
+      map: "https://maps.google.com/?q=Wax+Museum+Records+250+Flinders+Street+Melbourne",
       cost: { aud: 0, note: "Free to browse" },
-      booking: "https://www.south-wharf.dfo.com.au/",
       transport: [
-        { mode: "Walk", cost: "Free", time: "15 min from CBD", note: "Along Southbank Promenade" },
-        { mode: "Tram 58", cost: "A$2.85", time: "8 min", note: "" }
+        { mode: "Walk", cost: "Free", time: "5 min from Emporium", note: "250 Flinders St, basement level" }
+      ]
+    },
+    {
+      time: "16:15", title: "Rocksteady Records",
+      type: "culture",
+      desc: "Passion-driven CBD record store with a strong focus on supporting local independent Australian artists. Also stocks reggae, soul, jazz, and hip-hop. Upstairs at Mitchell House on Lonsdale Street. A short walk from Wax Museum to complete the CBD vinyl crawl. Mon-Thu 9:30am-6pm, Fri 9:30am-7pm, Sat 9:30am-5pm.",
+      atmosphere: ["local", "artsy"],
+      img: "",
+      map: "https://maps.google.com/?q=Rocksteady+Records+358+Lonsdale+Street+Melbourne",
+      cost: { aud: 0, note: "Free to browse" },
+      transport: [
+        { mode: "Walk", cost: "Free", time: "8 min from Wax Museum", note: "Level 1, Mitchell House, 358 Lonsdale St" }
       ]
     },
     {
@@ -968,7 +994,7 @@ const DAYS = [
       transport: []
     }
   ],
-  dayCost: { transport: 10, food: 165, activities: 55, accommodation: 250 }
+  dayCost: { transport: 10, food: 173, activities: 55, accommodation: 250 }
 },
 {
   num: 10, date: "Wed, 3 Jun", title: "Departure Day", theme: "Farewell Melbourne",
