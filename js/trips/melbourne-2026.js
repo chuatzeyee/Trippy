@@ -44,7 +44,7 @@ const DAYS = [
     {
       time: "14:30", title: "Lunch at Degraves Street",
       type: "food",
-      desc: "Melbourne’s most famous laneway café strip. Cobblestoned, narrow, lined with tiny espresso bars, cafés, and bakeries. Grab a flat white and a toastie or eggs benedict. Try Degraves Espresso Bar or Journal Café. This is Melbourne coffee culture distilled.",
+      desc: "Melbourne's most famous laneway café strip. Cobblestoned, narrow, lined with tiny espresso bars, cafés, and bakeries. Grab a flat white and a toastie or eggs benedict. Try Degraves Espresso Bar or Journal Café. This is Melbourne coffee culture distilled.",
       atmosphere: ["artsy", "touristy", "foodie"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Degraves_Street_in_Melbourne_Australia.jpg/960px-Degraves_Street_in_Melbourne_Australia.jpg",
       map: "https://maps.google.com/?q=Degraves+Street+Melbourne",
@@ -56,7 +56,7 @@ const DAYS = [
     {
       time: "15:30", title: "Flinders Street Station",
       type: "culture",
-      desc: "Melbourne’s most iconic building. The butter-yellow Edwardian Baroque facade with its famous row of clocks is THE image of Melbourne. Best photographed from the steps of Federation Square across the street. Stunning at dusk when the facade is illuminated. The station is fully operational -35+ million passengers annually.",
+      desc: "Melbourne's most iconic building. The butter-yellow Edwardian Baroque facade with its famous row of clocks is THE image of Melbourne. Best photographed from the steps of Federation Square across the street. Stunning at dusk when the facade is illuminated. The station is fully operational -35+ million passengers annually.",
       atmosphere: ["historic", "busy", "touristy"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flinders_Street_Station_Main_Building%2C_May_2019.jpg/960px-Flinders_Street_Station_Main_Building%2C_May_2019.jpg",
       map: "https://maps.google.com/?q=Flinders+Street+Station+Melbourne",
@@ -68,7 +68,7 @@ const DAYS = [
     {
       time: "16:00", title: "Federation Square & ACMI",
       type: "culture",
-      desc: "Melbourne’s cultural heart. Striking postmodern architecture of glass, zinc, and sandstone shards. Home to ACMI (Australian Centre for the Moving Image, free entry), The Ian Potter Centre: NGV Australia (free), and Koorie Heritage Trust. Buskers, pop-up markets, and the big screen showing live sports. The plaza buzzes with energy year-round.",
+      desc: "Melbourne's cultural heart. Striking postmodern architecture of glass, zinc, and sandstone shards. Home to ACMI (Australian Centre for the Moving Image, free entry), The Ian Potter Centre: NGV Australia (free), and Koorie Heritage Trust. Buskers, pop-up markets, and the big screen showing live sports. The plaza buzzes with energy year-round.",
       atmosphere: ["artsy", "touristy", "multicultural", "busy"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Federation_Square%2C_Melbourne.jpg/960px-Federation_Square%2C_Melbourne.jpg",
       map: "https://maps.google.com/?q=Federation+Square+Melbourne",
@@ -81,7 +81,7 @@ const DAYS = [
     {
       time: "17:00", title: "Hosier Lane Street Art",
       type: "culture",
-      desc: "A narrow cobblestone laneway completely blanketed in street art, graffiti, murals, and paste-ups. The art changes constantly -new pieces appear daily. Look for Matt Adnate’s towering 23-metre portrait of an Indigenous boy on McDonald House. The lane smells of spray paint and hums with photographers. Also explore nearby AC/DC Lane.",
+      desc: "A narrow cobblestone laneway completely blanketed in street art, graffiti, murals, and paste-ups. The art changes constantly -new pieces appear daily. Look for Matt Adnate's towering 23-metre portrait of an Indigenous boy on McDonald House. The lane smells of spray paint and hums with photographers. Also explore nearby AC/DC Lane.",
       atmosphere: ["artsy", "bohemian", "grungy", "touristy"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Hosier_Lane%2C_Melbourne%2C_Victoria%2C_Australia.JPG/960px-Hosier_Lane%2C_Melbourne%2C_Victoria%2C_Australia.JPG",
       map: "https://maps.google.com/?q=Hosier+Lane+Melbourne",
@@ -121,7 +121,7 @@ const DAYS = [
       desc: "Walk back to Collins House (10 min). Rest and recover from the red-eye flight. Set your alarm for an early market morning tomorrow.",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 0 },
       transport: []
     }
@@ -145,7 +145,7 @@ const DAYS = [
     {
       time: "09:30", title: "Queen Victoria Market",
       type: "food",
-      desc: "Melbourne’s 145-year-old market. Seven hectares of fresh produce, gourmet food, clothing, and souvenirs. The Meat & Fish Hall has sashimi-grade yellowfin, Coffin Bay oysters, live mud crabs. Dairy Hall stocks 50+ Australian artisan cheeses. Must-eat: American Doughnut Kitchen (jam doughnuts since the 1950s), The Bund (Shanghai dumplings), boreks (pan-fried flatbread). Open Tue/Thu/Fri/Sat/Sun.",
+      desc: "Melbourne's 145-year-old market. Seven hectares of fresh produce, gourmet food, clothing, and souvenirs. The Meat & Fish Hall has sashimi-grade yellowfin, Coffin Bay oysters, live mud crabs. Dairy Hall stocks 50+ Australian artisan cheeses. Must-eat: American Doughnut Kitchen (jam doughnuts since the 1950s), The Bund (Shanghai dumplings), boreks (pan-fried flatbread). Open Tue/Thu/Fri/Sat/Sun.",
       atmosphere: ["busy", "multicultural", "foodie", "local"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Melbourne_%28AU%29%2C_Queen_Victoria_Market_--_2019_--_1542.jpg/960px-Melbourne_%28AU%29%2C_Queen_Victoria_Market_--_2019_--_1542.jpg",
       map: "https://maps.google.com/?q=Queen+Victoria+Market+Melbourne",
@@ -159,7 +159,7 @@ const DAYS = [
     {
       time: "11:00", title: "State Library of Victoria",
       type: "culture",
-      desc: "One of the world’s most beautiful libraries. The La Trobe Reading Room is a breathtaking octagonal domed space flooded with natural light. Free entry. Small exhibitions rotate. The front lawn is a favourite local hangout. Founded 1854 -one of Australia’s oldest cultural institutions.",
+      desc: "One of the world's most beautiful libraries. The La Trobe Reading Room is a breathtaking octagonal domed space flooded with natural light. Free entry. Small exhibitions rotate. The front lawn is a favourite local hangout. Founded 1854 -one of Australia's oldest cultural institutions.",
       atmosphere: ["quiet", "historic", "artsy"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/State_Library_of_Victoria_La_Trobe_Reading_room_5th_floor_view.jpg/960px-State_Library_of_Victoria_La_Trobe_Reading_room_5th_floor_view.jpg",
       map: "https://maps.google.com/?q=State+Library+of+Victoria+Melbourne",
@@ -195,7 +195,7 @@ const DAYS = [
     {
       time: "14:00", title: "NGV International (National Gallery of Victoria)",
       type: "culture",
-      desc: "Australia’s oldest and most visited art gallery. The permanent collection is FREE and world-class: European Old Masters, Asian art, photography, Australian art. The water wall entrance is iconic. Allow 2-3 hours. Check for paid special exhibitions. The CARTIER: Melbourne Winter Masterpieces show opens June 12 -just after your trip.",
+      desc: "Australia's oldest and most visited art gallery. The permanent collection is FREE and world-class: European Old Masters, Asian art, photography, Australian art. The water wall entrance is iconic. Allow 2-3 hours. Check for paid special exhibitions. The CARTIER: Melbourne Winter Masterpieces show opens June 12 -just after your trip.",
       atmosphere: ["quiet", "artsy", "upscale"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Melbourne_National_Gallery_of_Victoria_Main_facade_seen_in_front.jpg/960px-Melbourne_National_Gallery_of_Victoria_Main_facade_seen_in_front.jpg",
       map: "https://maps.google.com/?q=NGV+International+180+St+Kilda+Road+Melbourne",
@@ -222,7 +222,7 @@ const DAYS = [
     {
       time: "17:30", title: "Shrine of Remembrance",
       type: "culture",
-      desc: "Victoria’s war memorial, modelled on the Mausoleum at Halicarnassus. The Sanctuary interior houses the Stone of Remembrance, lit by a shaft of sunlight on Remembrance Day. The rooftop balcony offers sweeping 360° views of the Melbourne skyline and gardens. Free guided tours every hour (45 min, A$20). The crypt and galleries are deeply moving.",
+      desc: "Victoria's war memorial, modelled on the Mausoleum at Halicarnassus. The Sanctuary interior houses the Stone of Remembrance, lit by a shaft of sunlight on Remembrance Day. The rooftop balcony offers sweeping 360° views of the Melbourne skyline and gardens. Free guided tours every hour (45 min, A$20). The crypt and galleries are deeply moving.",
       atmosphere: ["quiet", "historic", "scenic"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Shrine_of_Remembrance_Melbourne_Australia.jpg/960px-Shrine_of_Remembrance_Melbourne_Australia.jpg",
       map: "https://maps.google.com/?q=Shrine+of+Remembrance+Melbourne",
@@ -276,7 +276,7 @@ const DAYS = [
     {
       time: "09:15", title: "Razorback & Loch Ard Gorge",
       type: "nature",
-      desc: "The Razorback is a narrow rock formation jutting into the ocean. Then walk to Loch Ard Gorge \u2014 a spectacular gorge named after the clipper ship that wrecked here in 1878 (52 died, 2 survived). Turquoise water framed by towering cliffs. Self-guided walks cover shipwreck history and coastal geology.",
+      desc: "The Razorback is a narrow rock formation jutting into the ocean. Then walk to Loch Ard Gorge - a spectacular gorge named after the clipper ship that wrecked here in 1878 (52 died, 2 survived). Turquoise water framed by towering cliffs. Self-guided walks cover shipwreck history and coastal geology.",
       atmosphere: ["historic", "scenic", "coastal", "quiet"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Loch_Ard_Gorge%2C_northeast_view_20230217_1.jpg/960px-Loch_Ard_Gorge%2C_northeast_view_20230217_1.jpg",
       map: "https://maps.google.com/?q=Loch+Ard+Gorge+Victoria",
@@ -286,7 +286,7 @@ const DAYS = [
     {
       time: "10:00", title: "Gibson Steps",
       type: "nature",
-      desc: "Descend steep steps carved into the 70m cliff face to the beach at the base of two Apostles formations. Stand on the sand and look up \u2014 the scale is humbling. Check tide times; the beach floods at high tide.",
+      desc: "Descend steep steps carved into the 70m cliff face to the beach at the base of two Apostles formations. Stand on the sand and look up - the scale is humbling. Check tide times; the beach floods at high tide.",
       atmosphere: ["scenic", "coastal", "quiet"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Gibson_steps_-_Great_Ocean_Road.jpg/960px-Gibson_steps_-_Great_Ocean_Road.jpg",
       map: "https://maps.google.com/?q=Gibson+Steps+Port+Campbell+National+Park",
@@ -300,7 +300,7 @@ const DAYS = [
       atmosphere: ["relaxed", "coastal", "local"],
       img: "",
       map: "https://maps.google.com/?q=Port+Campbell+Victoria",
-      cost: { aud: 25, note: "A$20\u201330 pp (own expense)" },
+      cost: { aud: 25, note: "A$20-30 pp (own expense)" },
       transport: []
     },
     {
@@ -314,7 +314,7 @@ const DAYS = [
       transport: []
     },
     {
-      time: "13:30", title: "Kennett River Koala Walk \u2014 Wild Koalas!",
+      time: "13:30", title: "Kennett River Koala Walk - Wild Koalas!",
       type: "nature",
       desc: "THE best place to see wild koalas on the GOR. Walk along Grey River Road and look up into the eucalyptus forks. Late May is the BEST time: bare branches make koalas much easier to spot, and they descend lower for warmth. Also expect King Parrots and Crimson Rosellas. Otway koala population: ~20,000.",
       atmosphere: ["wildlife", "quiet", "scenic"],
@@ -326,7 +326,7 @@ const DAYS = [
     {
       time: "14:30", title: "Apollo Bay & Coastal Drive",
       type: "nature",
-      desc: "Drive through Apollo Bay, a laidback fishing town with a long curved beach. Then continue along the iconic coastal stretch \u2014 Memorial Arch, surf coast beaches, and ocean views. The road hugs the cliffs with the Southern Ocean crashing below.",
+      desc: "Drive through Apollo Bay, a laidback fishing town with a long curved beach. Then continue along the iconic coastal stretch - Memorial Arch, surf coast beaches, and ocean views. The road hugs the cliffs with the Southern Ocean crashing below.",
       atmosphere: ["scenic", "coastal", "relaxed"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Apollo_Bay_Harbour_%288653735055%29.jpg/960px-Apollo_Bay_Harbour_%288653735055%29.jpg",
       map: "https://maps.google.com/?q=Apollo+Bay+Victoria",
@@ -346,11 +346,11 @@ const DAYS = [
     {
       time: "19:30", title: "Dinner at Supernormal",
       type: "food",
-      desc: "Andrew McConnell\u2019s pan-Asian restaurant on Flinders Lane. Lobster rolls, prawn toast, dumplings, bao, and charcoal grilled dishes. Slick, modern interior. A$50\u201375 pp. Walk-ins welcome.",
+      desc: "Andrew McConnell's pan-Asian restaurant on Flinders Lane. Lobster rolls, prawn toast, dumplings, bao, and charcoal grilled dishes. Slick, modern interior. A$50-75 pp. Walk-ins welcome.",
       atmosphere: ["foodie", "upscale", "busy"],
       img: "",
       map: "https://maps.google.com/?q=Supernormal+Flinders+Lane+Melbourne",
-      cost: { aud: 60, note: "A$50\u201375 pp" },
+      cost: { aud: 60, note: "A$50-75 pp" },
       booking: "https://supernormal.net.au/",
       transport: [
         { mode: "Walk", cost: "Free", time: "8 min from Collins House", note: "" }
@@ -366,17 +366,17 @@ const DAYS = [
     {
       time: "09:00", title: "Sleep In & Leisurely Breakfast",
       type: "food",
-      desc: "Recover from yesterday\u2019s 12-hour GOR tour. Take your time \u2014 make breakfast in the apartment kitchen or walk to Degraves Street for a flat white and eggs.",
+      desc: "Recover from yesterday's 12-hour GOR tour. Take your time - make breakfast in the apartment kitchen or walk to Degraves Street for a flat white and eggs.",
       atmosphere: ["relaxed"],
       img: "",
       map: "https://maps.google.com/?q=Degraves+Street+Melbourne",
-      cost: { aud: 15, note: "A$12\u201318 pp" },
+      cost: { aud: 15, note: "A$12-18 pp" },
       transport: []
     },
     {
       time: "10:30", title: "SEA LIFE Melbourne Aquarium",
       type: "nature",
-      desc: "Walk through the underwater glass tunnel surrounded by sharks, rays, and giant fish. The Penguin Passport experience lets you suit up in Antarctic gear and meet the resident King and Gentoo Penguins. New Rocky Shores zone. Allow 1.5\u20132 hours. Book online for the cheapest weekday rate.",
+      desc: "Walk through the underwater glass tunnel surrounded by sharks, rays, and giant fish. The Penguin Passport experience lets you suit up in Antarctic gear and meet the resident King and Gentoo Penguins. New Rocky Shores zone. Allow 1.5-2 hours. Book online for the cheapest weekday rate (A$53 walk-up/weekend).",
       atmosphere: ["family", "touristy"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/MelbourneAquariumEast.JPG/960px-MelbourneAquariumEast.JPG",
       map: "https://maps.google.com/?q=SEA+LIFE+Melbourne+Aquarium+King+Street",
@@ -393,7 +393,7 @@ const DAYS = [
       atmosphere: ["relaxed", "scenic", "foodie"],
       img: "",
       map: "https://maps.google.com/?q=South+Wharf+Promenade+Melbourne",
-      cost: { aud: 30, note: "A$25\u201335 pp" },
+      cost: { aud: 30, note: "A$25-35 pp" },
       transport: [
         { mode: "Walk", cost: "Free", time: "10 min from Aquarium", note: "Along Southbank" }
       ]
@@ -401,7 +401,7 @@ const DAYS = [
     {
       time: "14:00", title: "Melbourne Museum",
       type: "culture",
-      desc: "Victoria\u2019s major natural and cultural history museum in Carlton Gardens. Currently hosting: Triceratops: Fate of the Dinosaurs, Our Wondrous Planet, and Empire Power People (Ancient Rome). Children under 16 free. A$18/adult. Allow 2\u20133 hours.",
+      desc: "Victoria's major natural and cultural history museum in Carlton Gardens. Currently hosting: Triceratops: Fate of the Dinosaurs, Our Wondrous Planet, and Empire Power People (Ancient Rome). Children under 16 free. A$18/adult. Allow 2-3 hours.",
       atmosphere: ["quiet", "family", "historic"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Melbourne_Museum_exterior.jpg/960px-Melbourne_Museum_exterior.jpg",
       map: "https://maps.google.com/?q=Melbourne+Museum+11+Nicholson+Street+Carlton",
@@ -409,27 +409,27 @@ const DAYS = [
       booking: "https://museumsvictoria.com.au/melbournemuseum/tickets/",
       transport: [
         { mode: "Tram (FREE)", cost: "Free", time: "15 min", note: "Tram along Nicholson St, Free Tram Zone" },
-        { mode: "Uber", cost: "A$10\u201315", time: "8 min", note: "" }
+        { mode: "Uber", cost: "A$10-15", time: "8 min", note: "" }
       ]
     },
     {
-      time: "16:30", title: "Eureka Skydeck \u2014 The Edge Experience",
+      time: "16:30", title: "Eureka Skydeck - The Edge Experience",
       type: "culture",
-      desc: "Level 88 of Eureka Tower \u2014 285 metres up. The Edge Experience slides a glass cube 3 metres out from the building with you inside it, suspended 88 floors above the street. Views stretch across Port Phillip Bay, the Dandenong Ranges, and the entire Melbourne skyline. Best visited on a clear afternoon for golden hour light.",
+      desc: "Level 88 of Eureka Tower - 285 metres up. The Edge Experience slides a glass cube 3 metres out from the building with you inside it, suspended 88 floors above the street. Views stretch across Port Phillip Bay, the Dandenong Ranges, and the entire Melbourne skyline. Best visited on a clear afternoon for golden hour light.",
       atmosphere: ["scenic", "touristy"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Melbourne_%28AU%29%2C_View_from_Eureka_Tower%2C_Northbank_--_2019_--_1461.jpg/960px-Melbourne_%28AU%29%2C_View_from_Eureka_Tower%2C_Northbank_--_2019_--_1461.jpg",
       map: "https://maps.google.com/?q=Eureka+Skydeck+7+Riverside+Quay+Southbank",
-      cost: { aud: 42, note: "A$31\u201342 pp (General + Edge combo)" },
+      cost: { aud: 55, note: "A$47-61 pp (Skydeck + Edge combo)" },
       booking: "https://www.melbourneskydeck.com.au/",
       transport: [
-        { mode: "Walk", cost: "Free", time: "15 min from Museum", note: "Or tram to Southbank" },
-        { mode: "Uber", cost: "A$10\u201315", time: "8 min", note: "" }
+        { mode: "Walk", cost: "Free", time: "40 min from Museum", note: "3.5 km through Carlton Gardens & CBD" },
+        { mode: "Uber", cost: "A$10-15", time: "8 min", note: "" }
       ]
     },
     {
       time: "18:00", title: "Walk Along Southbank Promenade",
       type: "culture",
-      desc: "Take the Southbank Promenade from Eureka Tower along the Yarra River. Crown\u2019s fire pillars erupt on the hour after dark. Public art installations line the walkway. This is Melbourne\u2019s most photogenic walk at dusk.",
+      desc: "Take the Southbank Promenade from Eureka Tower along the Yarra River. Crown's fire pillars erupt on the hour after dark. Public art installations line the walkway. This is Melbourne's most photogenic walk at dusk.",
       atmosphere: ["romantic", "scenic", "relaxed"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Southbank_and_Yarra_River%2C_Melbourne%2C_as_seen_from_Evan_Walker_Bridge_20230219_1.jpg/960px-Southbank_and_Yarra_River%2C_Melbourne%2C_as_seen_from_Evan_Walker_Bridge_20230219_1.jpg",
       map: "https://maps.google.com/?q=Southbank+Promenade+Melbourne",
@@ -437,20 +437,20 @@ const DAYS = [
       transport: []
     },
     {
-      time: "19:00", title: "Dinner on Victoria Street, Richmond \u2014 Vietnamese",
+      time: "19:00", title: "Dinner on Victoria Street, Richmond - Vietnamese",
       type: "food",
-      desc: "Melbourne\u2019s \"Little Saigon.\" Try Pho Hung Vuong (legendary pho since 1982), Thanh Ha 2 (crispy banh xeo), or Nhu Lan Bakery (best banh mi, A$6.50). Bustling, no-frills, absolutely delicious. A taste of home for Singaporeans.",
+      desc: "Melbourne's \"Little Saigon.\" Try Pho Hung Vuong (legendary pho since 1982), Thanh Ha 2 (crispy banh xeo), or Nhu Lan Bakery (best banh mi, A$6.50). Bustling, no-frills, absolutely delicious. A taste of home for Singaporeans.",
       atmosphere: ["multicultural", "busy", "foodie", "local"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Victoria_Street_Gateway.jpg/960px-Victoria_Street_Gateway.jpg",
       map: "https://maps.google.com/?q=Victoria+Street+Richmond+Melbourne",
-      cost: { aud: 20, note: "A$15\u201325 pp" },
+      cost: { aud: 20, note: "A$15-25 pp" },
       transport: [
         { mode: "Tram (FREE)", cost: "Free", time: "12 min from Southbank", note: "Tram 78 or 109" },
-        { mode: "Uber", cost: "A$10\u201315", time: "8 min", note: "" }
+        { mode: "Uber", cost: "A$10-15", time: "8 min", note: "" }
       ]
     }
   ],
-  dayCost: { transport: 0, food: 65, activities: 99, accommodation: 250 }
+  dayCost: { transport: 0, food: 65, activities: 112, accommodation: 250 }
 },
 {
   num: 5, date: "Fri, 29 May", title: "Phillip Island Wildlife", theme: "Penguins, Koalas, Seals & Coastal Wildlife",
@@ -459,10 +459,10 @@ const DAYS = [
     {
       time: "08:00", title: "Breakfast at Hotel & Prepare for a Long Day",
       type: "food",
-      desc: "Have a good breakfast -it’s a full 12-14 hour day. Pack warm layers for the evening Penguin Parade (you’ll be sitting outdoors at sunset in 8°C). Beanie, scarf, and gloves recommended.",
+      desc: "Have a good breakfast -it's a full 12-14 hour day. Pack warm layers for the evening Penguin Parade (you'll be sitting outdoors at sunset in 8°C). Beanie, scarf, and gloves recommended.",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 15 },
       transport: []
     },
@@ -494,7 +494,7 @@ const DAYS = [
     {
       time: "12:30", title: "Lunch at Cowes",
       type: "food",
-      desc: "Phillip Island’s main town. A small, friendly seaside village with fish & chip shops, bakeries, and cafes along Thompson Avenue. Try the Madcowes Café or Isola di Capri for Italian. The beach is sheltered and pleasant even in winter.",
+      desc: "Phillip Island's main town. A small, friendly seaside village with fish & chip shops, bakeries, and cafes along Thompson Avenue. Try the Madcowes Café or Isola di Capri for Italian. The beach is sheltered and pleasant even in winter.",
       atmosphere: ["local", "relaxed", "coastal"],
       img: "",
       map: "https://maps.google.com/?q=Cowes+Phillip+Island+Victoria",
@@ -504,7 +504,7 @@ const DAYS = [
     {
       time: "14:00", title: "Koala Conservation Centre",
       type: "nature",
-      desc: "Elevated boardwalks through natural bushland bring you to eye-level with koalas in their natural habitat. Rangers share fascinating facts about koala biology, diet, and conservation. You’ll get very close -some koalas sit at arm’s length. Allow 1 hour.",
+      desc: "Elevated boardwalks through natural bushland bring you to eye-level with koalas in their natural habitat. Rangers share fascinating facts about koala biology, diet, and conservation. You'll get very close -some koalas sit at arm's length. Allow 1 hour.",
       atmosphere: ["wildlife", "quiet", "family"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Koala_Phillip_Island_z.JPG/960px-Koala_Phillip_Island_z.JPG",
       map: "https://maps.google.com/?q=Koala+Conservation+Centre+Phillip+Island",
@@ -515,7 +515,7 @@ const DAYS = [
     {
       time: "15:15", title: "The Nobbies & Seal Rocks",
       type: "nature",
-      desc: "A windswept boardwalk along dramatic cliff tops at the western tip of Phillip Island. From here, you can see Seal Rocks -home to Australia’s largest fur seal colony (~25,000 seals). Bring binoculars. The boardwalk views are spectacular. Free entry. Allow 45 min.",
+      desc: "A windswept boardwalk along dramatic cliff tops at the western tip of Phillip Island. From here, you can see Seal Rocks -home to Australia's largest fur seal colony (~25,000 seals). Bring binoculars. The boardwalk views are spectacular. Free entry. Allow 45 min.",
       atmosphere: ["scenic", "coastal", "wildlife", "quiet"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Nobbies_Boardwalk%2C_Phillip_Island.png/960px-Nobbies_Boardwalk%2C_Phillip_Island.png",
       map: "https://maps.google.com/?q=The+Nobbies+Phillip+Island",
@@ -536,20 +536,20 @@ const DAYS = [
     {
       time: "18:00", title: "Return to Melbourne",
       type: "transport",
-      desc: "Drive back to Melbourne (~2 hours). You’ll arrive around 20:00. If on a guided tour, the bus returns to your hotel. If on a private tour, your driver drops you at Collins House.",
+      desc: "Drive back to Melbourne (~2 hours). You'll arrive around 20:00. If on a guided tour, the bus returns to your hotel. If on a private tour, your driver drops you at Collins House.",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 0, note: "Included in tour price" },
       transport: []
     },
     {
       time: "20:30", title: "Late Dinner at Hotel (Self-Catering)",
       type: "food",
-      desc: "Pick up takeaway from Uber Eats or a nearby restaurant. You’ll be tired after a long day. The apartment kitchen lets you keep it simple.",
+      desc: "Pick up takeaway from Uber Eats or a nearby restaurant. You'll be tired after a long day. The apartment kitchen lets you keep it simple.",
       atmosphere: ["relaxed"],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 20, note: "A$15-25 pp" },
       transport: []
     }
@@ -566,14 +566,14 @@ const DAYS = [
       desc: "Self-catering or grab a quick coffee from Little Rogue on Drewery Lane (superb espresso, tiny standing-room-only bar).",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 10 },
       transport: []
     },
     {
       time: "08:45", title: "Train to Belgrave",
       type: "transport",
-      desc: "Take the Belgrave line from Flinders Street Station directly to Belgrave -the terminus. ~75 min ride through Melbourne’s eastern suburbs into the Dandenong Ranges. FREE on public transport this week (May 25-31).",
+      desc: "Take the Belgrave line from Flinders Street Station directly to Belgrave -the terminus. ~75 min ride through Melbourne's eastern suburbs into the Dandenong Ranges. FREE on public transport this week (May 25-31).",
       atmosphere: [],
       img: "",
       map: "https://maps.google.com/?q=Belgrave+Railway+Station+Victoria",
@@ -585,7 +585,7 @@ const DAYS = [
     {
       time: "10:00", title: "Puffing Billy Railway -Belgrave to Lakeside",
       type: "culture",
-      desc: "Australia’s favourite heritage steam train. The century-old locomotive chugs through towering mountain ash forests, across the iconic Monbulk Creek Trestle Bridge. Open-air carriages let you dangle your legs over the side (traditional, but cold in winter -dress warm!). The 13 km journey to Lakeside takes ~1 hour. At Lakeside, the train pauses for 30 min before returning. MUST pre-book. No tickets sold on the day.",
+      desc: "Australia's favourite heritage steam train. The century-old locomotive chugs through towering mountain ash forests, across the iconic Monbulk Creek Trestle Bridge. Open-air carriages let you dangle your legs over the side (traditional, but cold in winter -dress warm!). The 13 km journey to Lakeside takes ~1 hour. At Lakeside, the train pauses for 30 min before returning. MUST pre-book. No tickets sold on the day.",
       atmosphere: ["scenic", "historic", "family"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Puffing_Billy_Railway_14A_on_the_Monbulk_Creek_Trestle_Bridge_-_May_2014_-_01.jpg/960px-Puffing_Billy_Railway_14A_on_the_Monbulk_Creek_Trestle_Bridge_-_May_2014_-_01.jpg",
       map: "https://maps.google.com/?q=Puffing+Billy+Railway+Belgrave",
@@ -609,7 +609,7 @@ const DAYS = [
       desc: "Board the return steam train. Same beautiful journey in reverse. Arrive Belgrave ~15:00.",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Belgrave+Railway+Station+Victoria",
       cost: { aud: 0, note: "Included in return ticket" },
       transport: []
     },
@@ -619,7 +619,7 @@ const DAYS = [
       desc: "Metro train from Belgrave to Flinders Street Station. ~75 min. Free transport.",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Flinders+Street+Station+Melbourne",
       cost: { aud: 0, note: "FREE" },
       transport: []
     },
@@ -639,7 +639,7 @@ const DAYS = [
     {
       time: "19:00", title: "Dinner on Lygon Street, Carlton",
       type: "food",
-      desc: "Melbourne’s “Little Italy.” Post-war Italian migrants turned this into a pasta paradise. Try Capitano (creative modern Italian, pasta alla vodka A$24), D.O.C. (authentic Napoletana pizza, mozzarella bar), or Tiamo (beloved no-frills Italian since 1986). Lygon Street buzzes on Saturday nights.",
+      desc: "Melbourne's 'Little Italy.' Post-war Italian migrants turned this into a pasta paradise. Try Capitano (creative modern Italian, pasta alla vodka A$24), D.O.C. (authentic Napoletana pizza, mozzarella bar), or Tiamo (beloved no-frills Italian since 1986). Lygon Street buzzes on Saturday nights.",
       atmosphere: ["foodie", "multicultural", "busy", "local"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Lygon_Street%2C_Carlton.jpg/960px-Lygon_Street%2C_Carlton.jpg",
       map: "https://maps.google.com/?q=Lygon+Street+Carlton+Melbourne",
@@ -662,14 +662,14 @@ const DAYS = [
       desc: "Self-catering or coffee at Patricia Coffee Brewers (standing bar, no seats, incredible coffee).",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 10 },
       transport: []
     },
     {
       time: "09:30", title: "Brighton Beach Bathing Boxes",
       type: "culture",
-      desc: "93 heritage-listed wooden bathing boxes painted in vibrant colours, standing in a row along Dendy Street Beach. Privately owned (some sell for A$300k+), they’re a beloved Melbourne icon. Perfect for photos against the Port Phillip Bay backdrop. In late May, the beach is quiet and the light is gorgeous. Free to visit, 30-60 min.",
+      desc: "93 heritage-listed wooden bathing boxes painted in vibrant colours, standing in a row along Dendy Street Beach. Privately owned (some sell for A$300k+), they're a beloved Melbourne icon. Perfect for photos against the Port Phillip Bay backdrop. In late May, the beach is quiet and the light is gorgeous. Free to visit, 30-60 min.",
       atmosphere: ["scenic", "quiet", "touristy"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/PXL_20241005_062211747.MP_Brighton_Bathing_Boxes_Esplanade%2C_Brighton_VIC_3186%2C_Australia_01.jpg/960px-PXL_20241005_062211747.MP_Brighton_Bathing_Boxes_Esplanade%2C_Brighton_VIC_3186%2C_Australia_01.jpg",
       map: "https://maps.google.com/?q=Brighton+Bathing+Boxes+Dendy+Street+Beach",
@@ -682,7 +682,7 @@ const DAYS = [
     {
       time: "10:30", title: "St Kilda Beach & Pier",
       type: "nature",
-      desc: "Melbourne’s most famous beach suburb. Walk along the palm-tree-lined foreshore to St Kilda Pier. At the end of the pier’s breakwater, a colony of Little Penguins nests in the rock crevices -they’re best seen at dusk, but you may spot a few during the day. The pier has sweeping views of the city skyline. Luna Park’s giant grinning mouth entrance is just along the Esplanade.",
+      desc: "Melbourne's most famous beach suburb. Walk along the palm-tree-lined foreshore to St Kilda Pier. At the end of the pier's breakwater, a colony of Little Penguins nests in the rock crevices -they're best seen at dusk, but you may spot a few during the day. The pier has sweeping views of the city skyline. Luna Park's giant grinning mouth entrance is just along the Esplanade.",
       atmosphere: ["bohemian", "relaxed", "coastal", "touristy"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Melbourne_%28AU%29%2C_St_Kilda_Beach_--_2019_--_1590.jpg/960px-Melbourne_%28AU%29%2C_St_Kilda_Beach_--_2019_--_1590.jpg",
       map: "https://maps.google.com/?q=St+Kilda+Beach+Melbourne",
@@ -695,7 +695,7 @@ const DAYS = [
     {
       time: "11:30", title: "Luna Park Melbourne",
       type: "culture",
-      desc: "Heritage amusement park (opened 1912) with the famous grinning face entrance. Opens Sat-Sun 11 AM-6 PM. Unlimited Rides tickets A$55 pp, or just enjoy the free-entry promenade and take photos. The Scenic Railway is the world’s oldest continually operating roller coaster (1912). Fun, retro atmosphere.",
+      desc: "Heritage amusement park (opened 1912) with the famous grinning face entrance. Opens Sat-Sun 11 AM-6 PM. Unlimited Rides tickets A$55 pp, or just enjoy the free-entry promenade and take photos. The Scenic Railway is the world's oldest continually operating roller coaster (1912). Fun, retro atmosphere.",
       atmosphere: ["family", "touristy", "local"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Melbourne%27s_Luna_Park_entrance_at_night.jpg/960px-Melbourne%27s_Luna_Park_entrance_at_night.jpg",
       map: "https://maps.google.com/?q=Luna+Park+Melbourne",
@@ -708,7 +708,7 @@ const DAYS = [
     {
       time: "12:30", title: "Lunch on Acland Street, St Kilda",
       type: "food",
-      desc: "St Kilda’s main dining strip. Famous for European cake shops (Monarch Cakes, Acland Street), brunch cafés, and eclectic restaurants. Try Lau’s Kitchen for Vietnamese, Batch Espresso for brunch, or Cicciolina for wine and Mediterranean plates. St Kilda on a Sunday is buzzy, with the Esplanade Market running along the foreshore (weather permitting).",
+      desc: "St Kilda's main dining strip. Famous for European cake shops (Monarch Cakes, Acland Street), brunch cafés, and eclectic restaurants. Try Lau's Kitchen for Vietnamese, Batch Espresso for brunch, or Cicciolina for wine and Mediterranean plates. St Kilda on a Sunday is buzzy, with the Esplanade Market running along the foreshore (weather permitting).",
       atmosphere: ["bohemian", "foodie", "local", "multicultural"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Acland_Street_in_St_Kilda.jpg/960px-Acland_Street_in_St_Kilda.jpg",
       map: "https://maps.google.com/?q=Acland+Street+St+Kilda+Melbourne",
@@ -718,7 +718,7 @@ const DAYS = [
     {
       time: "14:00", title: "Fitzroy -Brunswick Street",
       type: "culture",
-      desc: "Melbourne’s bohemian heartland. Brunswick Street is a non-stop strip of vintage shops, record stores, independent bookshops, tattoo parlours, quirky bars, and cafés. Street art covers every surface. The vibe is proudly grungy yet stylish -Japanese cafés next to dive bars, fashion studios next to Ethiopian restaurants. This is where Melbourne’s creative class lives.",
+      desc: "Melbourne's bohemian heartland. Brunswick Street is a non-stop strip of vintage shops, record stores, independent bookshops, tattoo parlours, quirky bars, and cafés. Street art covers every surface. The vibe is proudly grungy yet stylish -Japanese cafés next to dive bars, fashion studios next to Ethiopian restaurants. This is where Melbourne's creative class lives.",
       atmosphere: ["bohemian", "artsy", "grungy", "multicultural", "local"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Brunswick_Street%2C_Fitzroy%2C_Victoria%2C_Australia.jpg/960px-Brunswick_Street%2C_Fitzroy%2C_Victoria%2C_Australia.jpg",
       map: "https://maps.google.com/?q=Brunswick+Street+Fitzroy+Melbourne",
@@ -731,7 +731,7 @@ const DAYS = [
     {
       time: "16:00", title: "Collingwood -Smith Street",
       type: "culture",
-      desc: "Named the “coolest neighbourhood in the world” by Time Out. Grittier than Fitzroy, less polished. Smith Street is the main artery: Vietnamese bakeries sit beside rooftop bars, independent galleries hide in converted warehouses. Visit Collingwood Yards (creative hub), browse independent boutiques, or duck into an anonymous-looking door that turns out to be a natural wine bar.",
+      desc: "Named the 'coolest neighbourhood in the world' by Time Out. Grittier than Fitzroy, less polished. Smith Street is the main artery: Vietnamese bakeries sit beside rooftop bars, independent galleries hide in converted warehouses. Visit Collingwood Yards (creative hub), browse independent boutiques, or duck into an anonymous-looking door that turns out to be a natural wine bar.",
       atmosphere: ["bohemian", "grungy", "artsy", "multicultural"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Looking_north_on_Smith_Street_December_2020.jpg/960px-Looking_north_on_Smith_Street_December_2020.jpg",
       map: "https://maps.google.com/?q=Smith+Street+Collingwood+Melbourne",
@@ -743,7 +743,7 @@ const DAYS = [
     {
       time: "17:30", title: "Coffee at Industry Beans",
       type: "food",
-      desc: "Melbourne’s most inventive specialty coffee roaster. Experimental brews, single-origin pours, and a sleek industrial-chic space in a converted Fitzroy warehouse. Try the signature espresso or a pourover. Also serves excellent brunch food.",
+      desc: "Melbourne's most inventive specialty coffee roaster. Experimental brews, single-origin pours, and a sleek industrial-chic space in a converted Fitzroy warehouse. Try the signature espresso or a pourover. Also serves excellent brunch food.",
       atmosphere: ["artsy", "local", "foodie"],
       img: "",
       map: "https://maps.google.com/?q=Industry+Beans+Fitzroy+Melbourne",
@@ -755,7 +755,7 @@ const DAYS = [
     {
       time: "18:30", title: "Dinner at Cutler & Co",
       type: "food",
-      desc: "Andrew McConnell’s flagship. Refined Australian dining in a converted metalworks factory on Gertrude Street. Seasonal tasting menus or à la carte. Sunday supper menu (3 courses, A$90) is excellent value. Wine list is extraordinary. Book well ahead. One of Melbourne’s best restaurants.",
+      desc: "Andrew McConnell's flagship. Refined Australian dining in a converted metalworks factory on Gertrude Street. Seasonal tasting menus or à la carte. Sunday supper menu (3 courses, A$90) is excellent value. Wine list is extraordinary. Book well ahead. One of Melbourne's best restaurants.",
       atmosphere: ["upscale", "foodie", "romantic"],
       img: "",
       map: "https://maps.google.com/?q=Cutler+and+Co+Fitzroy+Melbourne",
@@ -778,14 +778,14 @@ const DAYS = [
       desc: "Fuel up -long day ahead. Self-catering or quick coffee from a nearby café.",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 10 },
       transport: []
     },
     {
       time: "08:30", title: "Train to Frankston",
       type: "transport",
-      desc: "Frankston line from Flinders Street Station to Frankston (~60 min). From June 1, public transport is HALF PRICE (daily cap A$5.70, 2-hour fare A$2.85). You’ll need a Myki card -buy one at any 7-Eleven for A$6 + top up.",
+      desc: "Frankston line from Flinders Street Station to Frankston (~60 min). From June 1, public transport is HALF PRICE (daily cap A$5.70, 2-hour fare A$2.85). You'll need a Myki card -buy one at any 7-Eleven for A$6 + top up.",
       atmosphere: [],
       img: "",
       map: "https://maps.google.com/?q=Frankston+Station+Victoria",
@@ -835,7 +835,7 @@ const DAYS = [
       desc: "Uber to Frankston Station (~A$50-60 from Sorrento) or Bus 788 to Frankston. Train back to CBD. Arrive ~17:30.",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 55, note: "A$50-60 Uber to Frankston + A$2.85 train" },
       transport: [
         { mode: "Uber + Train", cost: "A$55-65 total", time: "1.5 hours", note: "" },
@@ -845,17 +845,17 @@ const DAYS = [
     {
       time: "18:00", title: "Rest & Refresh at Hotel",
       type: "transport",
-      desc: "Freshen up before dinner. You’ve had a relaxing spa day -carry the zen into the evening.",
+      desc: "Freshen up before dinner. You've had a relaxing spa day -carry the zen into the evening.",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 0 },
       transport: []
     },
     {
       time: "19:30", title: "Fine Dining at Gimlet",
       type: "food",
-      desc: "Andrew McConnell’s glamorous 1920s-inspired brasserie at 33 Russell Street. Lobster thermidor, caviar, oysters, and cocktails in an opulent Art Deco space with crystal chandeliers and velvet banquettes. Dress up. A$100-150 pp with drinks. Book ahead.",
+      desc: "Andrew McConnell's glamorous 1920s-inspired brasserie at 33 Russell Street. Lobster thermidor, caviar, oysters, and cocktails in an opulent Art Deco space with crystal chandeliers and velvet banquettes. Dress up. A$100-150 pp with drinks. Book ahead.",
       atmosphere: ["upscale", "romantic", "foodie"],
       img: "",
       map: "https://maps.google.com/?q=Gimlet+33+Russell+Street+Melbourne",
@@ -878,14 +878,14 @@ const DAYS = [
       desc: "Self-catering or walk to Market Lane Coffee at Collins Quarter for a final Melbourne flat white.",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 10 },
       transport: []
     },
     {
       time: "09:30", title: "Melbourne Zoo",
       type: "nature",
-      desc: "Australia’s oldest zoo (est. 1862), just minutes north of the CBD. Home to 320+ animal species including platypus, Tasmanian Devils, koalas, kangaroos, gorillas, snow leopards, and elephants. Highlights: the Australian Bush habitat (walk among free-roaming kangaroos), the Platypus House, and the Gorilla Rainforest. Allow 3 hours. A$54.50/adult.",
+      desc: "Australia's oldest zoo (est. 1862), just minutes north of the CBD. Home to 320+ animal species including platypus, Tasmanian Devils, koalas, kangaroos, gorillas, snow leopards, and elephants. Highlights: the Australian Bush habitat (walk among free-roaming kangaroos), the Platypus House, and the Gorilla Rainforest. Allow 3 hours. A$54.50/adult.",
       atmosphere: ["family", "local", "wildlife"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Melbourne_Zoo_entrance_1a.jpg/960px-Melbourne_Zoo_entrance_1a.jpg",
       map: "https://maps.google.com/?q=Melbourne+Zoo+Elliott+Avenue+Parkville",
@@ -899,7 +899,7 @@ const DAYS = [
     {
       time: "12:30", title: "Lunch on Lygon Street (Carlton)",
       type: "food",
-      desc: "A short walk from the zoo into Carlton’s Italian quarter. Try Jimmy Watson’s Wine Bar (since 1935, great wine by the glass + cheese boards) or grab a quick wood-fired pizza at D.O.C. (authentic Napoletana, ~A$22).",
+      desc: "A short walk from the zoo into Carlton's Italian quarter. Try Jimmy Watson's Wine Bar (since 1935, great wine by the glass + cheese boards) or grab a quick wood-fired pizza at D.O.C. (authentic Napoletana, ~A$22).",
       atmosphere: ["foodie", "multicultural", "local"],
       img: "",
       map: "https://maps.google.com/?q=Lygon+Street+Carlton+Melbourne",
@@ -923,7 +923,7 @@ const DAYS = [
     {
       time: "15:30", title: "DFO South Wharf (Outlet Shopping)",
       type: "culture",
-      desc: "If you want bargains: 180+ outlet stores with up to 70% off retail. Armani, Ralph Lauren, Calvin Klein, Tommy Hilfiger, Nike Factory, Kathmandu, Converse, Levi’s. Waterfront location along the Yarra. Good for stocking up on Australian-brand clothing at discount prices.",
+      desc: "If you want bargains: 180+ outlet stores with up to 70% off retail. Armani, Ralph Lauren, Calvin Klein, Tommy Hilfiger, Nike Factory, Kathmandu, Converse, Levi's. Waterfront location along the Yarra. Good for stocking up on Australian-brand clothing at discount prices.",
       atmosphere: ["busy", "local"],
       img: "",
       map: "https://maps.google.com/?q=DFO+South+Wharf+Melbourne",
@@ -937,17 +937,17 @@ const DAYS = [
     {
       time: "17:00", title: "Return to Hotel & Pack",
       type: "transport",
-      desc: "Head back to Collins House. Start packing for tomorrow’s departure. Organise luggage, check TR59 flight status on the Scoot app.",
+      desc: "Head back to Collins House. Start packing for tomorrow's departure. Organise luggage, check TR59 flight status on the Scoot app.",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 0 },
       transport: []
     },
     {
       time: "19:00", title: "Farewell Dinner at Flower Drum",
       type: "food",
-      desc: "Melbourne’s legendary Cantonese restaurant, operating since 1975 on Market Lane in Chinatown. Peking duck (carved tableside), mud crab with XO sauce, pipis with black bean sauce. Impeccable white-tablecloth service. A$100-150 pp. Book well ahead -this is Melbourne’s most iconic restaurant. A fitting farewell to the city.",
+      desc: "Melbourne's legendary Cantonese restaurant, operating since 1975 on Market Lane in Chinatown. Peking duck (carved tableside), mud crab with XO sauce, pipis with black bean sauce. Impeccable white-tablecloth service. A$100-150 pp. Book well ahead -this is Melbourne's most iconic restaurant. A fitting farewell to the city.",
       atmosphere: ["upscale", "foodie", "historic"],
       img: "",
       map: "https://maps.google.com/?q=Flower+Drum+17+Market+Lane+Melbourne",
@@ -960,7 +960,7 @@ const DAYS = [
     {
       time: "21:00", title: "Final Walk Along Southbank Promenade",
       type: "culture",
-      desc: "A last stroll along the Yarra River at night. The city skyline reflected in the water, the Arts Centre spire illuminated, Crown’s fire pillars erupting on the hour. Melbourne at its most photogenic.",
+      desc: "A last stroll along the Yarra River at night. The city skyline reflected in the water, the Arts Centre spire illuminated, Crown's fire pillars erupting on the hour. Melbourne at its most photogenic.",
       atmosphere: ["romantic", "scenic", "relaxed"],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Melbourne_At_Night_from_Southbank_Bridge.JPG/960px-Melbourne_At_Night_from_Southbank_Bridge.JPG",
       map: "https://maps.google.com/?q=Southbank+Promenade+Melbourne",
@@ -1000,7 +1000,7 @@ const DAYS = [
       desc: "Check-out by 10:00 AM. Store luggage at reception if needed. Final check: passport, boarding pass, Myki card (keep as souvenir!).",
       atmosphere: [],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Collins+House+Apartments+CLLIX+464+Collins+Street+Melbourne",
       cost: { aud: 0 },
       transport: []
     },
@@ -1023,7 +1023,7 @@ const DAYS = [
       desc: "Terminal 2 for Scoot. Check in, drop bags, clear security and outbound immigration. Melbourne Airport has duty-free shopping and dining options airside.",
       atmosphere: ["busy"],
       img: "",
-      map: "",
+      map: "https://maps.google.com/?q=Melbourne+Airport+Tullamarine+Terminal+2",
       cost: { aud: 0 },
       transport: []
     },
@@ -1033,7 +1033,7 @@ const DAYS = [
       desc: "Depart Melbourne Tullamarine at 13:00. Boeing 787-9, 8h05m flight. Arrive Singapore Changi Terminal 1 at ~19:05 local time. Pre-book meals on the Scoot app. Welcome home.",
       atmosphere: [],
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Scoot_Boeing_787_%289V-OJF%29_at_Melbourne_International_Airport.jpg/960px-Scoot_Boeing_787_%289V-OJF%29_at_Melbourne_International_Airport.jpg",
-      map: "",
+      map: "https://maps.google.com/?q=Melbourne+Airport+Tullamarine+Terminal+2",
       cost: { aud: 0, note: "Pre-booked" },
       transport: []
     }
